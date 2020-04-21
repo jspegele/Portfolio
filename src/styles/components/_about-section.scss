@@ -1,0 +1,135 @@
+// about
+
+.about {
+  background-color: $primary;
+  color: $on-primary;
+  width: 100%;
+}
+
+.about__container {
+  display: flex;
+  height: auto;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.about__overview {
+  font-size: 2rem;
+  line-height: 3rem;
+  margin-top: $l-size;
+  padding: $l-size;
+}
+
+.about__roles {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.about__role {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: $l-size;
+}
+
+.role__icon {
+  color: lighten($primary, 10%);
+  font-size: 3.2rem;
+}
+
+.role__title {
+  font-size: $m-size;
+  font-weight: bold;
+  margin-top: $m-size;
+  text-transform: uppercase;
+}
+
+.role__info {
+  font-size: $m-size;
+  line-height: $m-size * 1.5;
+  margin-top: $m-size;
+}
+
+.about__links {
+  display: flex;
+  justify-content: flex-start;
+  font-size: $m-size;
+  margin-top: 6.4rem;
+  max-width: 60rem;
+
+  a {
+    color: $on-primary;
+    display: block;
+    margin-right: 3.2rem;
+    text-decoration: none;
+
+    &:hover {
+      color: lighten($on-primary, 25%);
+    }
+  }
+}
+
+@media (min-width: $tablet-breakpoint) {
+  .about__container {
+    justify-content: center;
+  }
+
+  .about__overview {
+    font-size: 2.4rem;
+    line-height: 4.8rem;
+    margin-top: $xl-size;
+    padding: $xl-size;
+  }
+
+  .about__roles {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: $l-size 0;
+    padding: 0 3.6rem;
+  }
+
+  .about__role {
+    padding: $s-size;
+  }
+
+  .role__title {
+    font-size: $m-size;
+  }
+
+  .role__info {
+    font-size: 2rem;
+    line-height: 3.6rem;
+  }
+}
+
+@media (min-width: $desktop-breakpoint) {
+  .about__container {
+    height: 1000px;
+  }
+
+  .about__overview {
+    margin-top: 0;
+  }
+
+  .about__roles {
+    margin-top: 6.4rem;
+  }
+
+  .about__role {
+    padding: $l-size;
+  }
+
+  .role__title {
+    font-size: $m-size;
+  }
+
+  .role__info {
+    font-size: $m-size;
+    line-height: $m-size * 1.5;
+  }
+}

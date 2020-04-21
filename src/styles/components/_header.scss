@@ -1,0 +1,58 @@
+// header
+.header {
+  display: none;
+}
+
+@media (min-width: $desktop-breakpoint) {
+  // header
+  .header {
+    background-color: $surface;
+    box-shadow: 0 3px 3px lighten($surface, 2%);
+    display: flex;
+    height: 6.4rem;
+    justify-content: flex-start;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+  }
+
+  .header__logo {
+    margin: 4px 0 0 $m-size;
+    width: 32px;
+  }
+
+  .header__logo img {
+    width: 100%;
+  }
+
+  .header__h1 a:hover {
+    color: $primary
+  }
+
+  // navigation
+  .nav {
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 1.6rem;
+  }
+
+  .nav__item {
+    color: darken($on-surface, 25%);
+    font-size: $m-size;
+    font-weight: 500;
+    padding: .8rem 1.2rem;
+    text-decoration: none;
+    transition: color .2s;
+  }
+
+  .nav__item:hover {
+    color: lighten($primary, 5%);
+  }
+
+  .nav__item i {
+    font-size: $s-size;
+    margin-top: 4px;
+    vertical-align: top;
+  }
+}
