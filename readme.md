@@ -1,6 +1,6 @@
 # JustinSpegele.com
 
-[Live Site](http://jspegelespegele.com/)
+[Live Site](http://justinspegele.com/)
 
 [Releases](https://github.com/jspegele/Portfolio/releases/tag/v1.0)
 
