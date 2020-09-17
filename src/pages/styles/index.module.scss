@@ -1,0 +1,56 @@
+@import '../../styles/linksUnderline.scss';
+
+.intro {
+  display: flex;
+  flex-direction: column-reverse;
+  margin-top: 3rem;
+}
+
+.copy {
+  margin: 2rem 0 0;
+}
+
+.image {
+
+  img {
+    border-radius: 1rem;
+    max-width: 12rem;
+  }
+}
+
+.title {
+  font-size: 3.6rem;
+  font-weight: 600;
+}
+
+.subtitle {
+  color: #666;
+  font-size: 2rem;
+  margin-top: 3rem;
+}
+
+@media (min-width: 769px) {
+  .intro {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 6rem;
+  }  
+
+  .copy {
+    margin: 0 12rem 0 0;
+  }
+  
+  .image {
+    text-align: center;
+  
+    img {
+      max-width: 20rem;
+    }
+  }
+}
+
+@media (min-width: 1025px) {
+  .image img {
+    max-width: 25rem;
+  }
+}
