@@ -1,0 +1,92 @@
+@import '../../styles/colors.scss';
+
+.about-wrapper {
+  background-color: $primary;
+  color: $on-primary;
+  width: 100%;
+}
+
+.about {
+  font-size: 2rem;
+  padding: 12rem 0;
+}
+
+.roles {
+  display: flex;
+  flex-direction: column;
+}
+
+.role {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-top: 6rem;
+}
+
+.role>div {
+  flex: 0 0 auto;
+}
+
+.role>div:last-child {
+  flex: 0 1 100%;
+}
+
+.icon {
+  color: lighten($primary, 10%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-right: 2rem;
+}
+
+.title {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.info {
+  margin-top: 1.6rem;
+}
+
+@media (min-width: 451px) {
+
+}
+
+@media (min-width: 769px) {
+  .about {
+    font-size: 2.4rem;
+  }
+
+  .roles {
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0 -3.2rem;
+    padding: 3.6rem 0;
+  }
+
+  .role {
+    align-items: flex-start;
+    flex-basis: 33%;
+    flex-direction: column;
+    margin-top: 2rem;
+    padding: 0 3.2rem;
+  }
+
+  .role>div {
+    flex: 0 1 auto;
+  }
+  
+  .role>div:last-child {
+    flex: 0 1 auto;
+  }
+
+  .title {
+    margin-top: 1.6rem;
+  }
+
+  .icon {
+
+  }
+}

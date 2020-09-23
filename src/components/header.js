@@ -1,8 +1,9 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
-import headerStyles from './styles/header.module.scss'
 import buttonStyles from './styles/buttons.module.scss'
+import headerStyles from './styles/header.module.scss'
+
 import Container from './container'
 
 const Header = () => {
@@ -11,50 +12,38 @@ const Header = () => {
     <div className={headerStyles.headerWrapper}>
       <Container>
         <header className={headerStyles.header}>
-          <h1 className={headerStyles.title}>
-            <Link to="/" className={buttonStyles.buttonPrimary}>
-              Justin Spegele
+          <Link to="/" className={`${buttonStyles.button} ${headerStyles.title}`}>
+            Justin Spegele
+          </Link>
+          <nav className={headerStyles.nav}>
+            <Link
+              to="/#top"
+              className={`${buttonStyles.button} ${headerStyles.navItem}`}
+              activeClassName={headerStyles.activeNavItem}
+            >
+              Home
             </Link>
-          </h1>
-          <nav>
-            <ul className={headerStyles.navList}>
-              <li>
-                <Link
-                  to="/"
-                  className={`${headerStyles.navItem} ${buttonStyles.buttonPrimary}`}
-                  activeClassName={buttonStyles.buttonPrimaryActive}
-                >
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/about"
-                  className={`${headerStyles.navItem} ${buttonStyles.buttonPrimary}`}
-                  activeClassName={buttonStyles.buttonPrimaryActive}
-                >
-                  About
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/guides"
-                  className={`${headerStyles.navItem} ${buttonStyles.buttonPrimary}`}
-                  activeClassName={buttonStyles.buttonPrimaryActive}
-                >
-                  Guides
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/contact"
-                  className={`${headerStyles.navItem} ${buttonStyles.buttonPrimary}`}
-                  activeClassName={buttonStyles.buttonPrimaryActive}
-                >
-                  Contact
-                </Link>
-              </li>
-            </ul>
+            <Link
+              to="/#about"
+              className={`${buttonStyles.button} ${headerStyles.navItem}`}
+              activeClassName={headerStyles.activeNavItem}
+            >
+              About
+            </Link>
+            <Link
+              to="/#contact"
+              className={`${buttonStyles.button} ${headerStyles.navItem}`}
+              activeClassName={headerStyles.activeNavItem}
+            >
+              Contact
+            </Link>
+            {/* <Link
+              to="/guides"
+              className={`${buttonStyles.button} ${headerStyles.navItem}`}
+              activeClassName={headerStyles.activeNavItem}
+            >
+              Guides
+            </Link> */}
           </nav>
         </header>
       </Container>

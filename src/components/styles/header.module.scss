@@ -1,45 +1,70 @@
 @import '../../styles/colors.scss';
 
 .header-wrapper {
-  background-color: $primary;
+  background-color: $surface;
+  box-shadow: 0 3px 3px lighten($surface, 2%);
+  display: block;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 .header {
   align-items: center;
   display: flex;
+  height: 6.4rem;
   justify-content: space-between;
   margin: 0 -2rem;
-  padding: 2rem 0 2.4rem;
-  flex-grow: 1;
 }
 
 .title {
-  line-height: 1;
-
-  a {
-    color: #fff;
-    font-size: 2.4rem;
-    text-decoration: none;
-  }
+  align-items: center;
+  color: $on-surface;
+  display: flex;
 }
 
-.nav-list {
-  display: flex;
-  list-style-type: none;
-  margin: 0;
+.title img {
+  width: 32px;
+}
+
+.nav {
+  display: none;
+  justify-content: space-evenly;
+  margin-left: 1.6rem;
 }
 
 .nav-item {
-  color: #fff;
-  font-size: 1.6rem;
-  margin-left: 1rem;
-  text-decoration: none;
+  background-color: $surface;
+  color: #bfbfbf;
+  margin-left: .4rem;
+  padding: .4rem 1rem;
 }
 
 .nav-item:hover {
-  color: #fff;
+  background-color: $primary;
+  color: $on-primary;
 }
 
 .active-nav-item {
-  color: #fff;
+  background-color: $primary;
+  color: $on-primary;
+}
+
+@media (min-width: 451px) {
+  .nav {
+    display: flex;
+  }
+
+  .nav-item {
+    margin-left: .6rem;
+    padding: .6rem 1.6rem;
+  }
+}
+
+@media (min-width: 769px) {
+  .nav-item {
+    margin-left: .8rem;
+    padding: 1rem 2rem;
+  }
 }

@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Boilerplate',
+    title: 'Justin Spegele | Web Developer, Researcher, PM',
     author: 'Justin Spegele - justinspegele.com'
   },
   plugins: [
