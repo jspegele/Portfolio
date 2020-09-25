@@ -2,9 +2,20 @@
 
 .hero-wrapper {
   background-color: $surface;
-  background-image: url(../../images/hero.jpg);
-  background-size: cover;
 }
+
+// .hero-wrapper::before {
+//   content: "";
+//   background-image: url(../../images/hero.jpg);
+//   background-size: cover;
+//   position: absolute;
+//   top: 0px;
+//   right: 0px;
+//   bottom: 0px;
+//   left: 0px;
+//   z-index: 0;
+//   opacity: .05;
+// }
 
 .overlay {
   width: 100%;
@@ -13,29 +24,50 @@
 }
 
 .hero {
+  display: flex;
+  flex-direction: column;
+  height: 95vh;
+  justify-content: space-between;
+  padding: 12rem 0 0;
+}
+
+.spacer {
+  visibility: hidden;
+}
+
+.hero-body {
   align-items: center;
   color: $on-surface;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 12rem 0;
+}
+
+.hero-footer {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 
   img {
-    border-radius: 50%;
-    box-shadow: inset 0 0 0 .1rem lighten($surface, 20%);
-    width: 8.4rem;
+    max-width: 70rem;
+    width: 100%;
   }
 }
 
-.title {
-  align-items: center;
+.title, .subtitle {
   display: flex;
   justify-content: center;
-  font-size: 3rem;
-  margin: 0;
-  padding: 2.4rem 0;
+  padding: 0;
   position: relative;
   text-align: center;
+  z-index: 1;
+}
+
+.title {
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin: 2.4rem 0 0;
 
   a {
     color: $on-surface;
@@ -44,30 +76,14 @@
   }
 }
 
-.tagline {
+.subtitle {
   font-size: 2rem;
+  font-weight: 400;
+  margin: 2rem 0 0;
+}
 
-  a {
-    color: $accent300;
-    text-decoration: none;
-
-    &:hover {
-      color: $accent400;
-    }
-  }
-
-  p, ul {
-    font-size: 2rem;
-    padding-bottom: 1.8rem;
-  }
-  
-  li {
-    padding-bottom: .6rem;
-  }
-
-  svg {
-    margin-right: 2rem;
-  }
+.cta {
+  margin-top: 3rem;
 }
 
 @media (min-width: 451px) {
@@ -76,18 +92,12 @@
   }
 
   .title {
-    font-size: 4.8rem;
-    letter-spacing: .1rem;
-    padding-bottom: 4.8rem;
+    font-size: 3.6rem;
   }
-
-  .tagline {
+  
+  .subtitle {
     font-size: 2.4rem;
-    max-width: 60rem;
-
-    p, ul {
-      font-size: 2.4rem;
-    }
+    margin-top: 2.4rem;
   }
 }
 
@@ -97,12 +107,10 @@
   }
 
   .hero {
-    height: 100vh;
-    padding: 3rem 0;
+    padding: 3rem 0 0;
   }
 
   .title {
     font-size: 4.8rem;
-    letter-spacing: .3rem;
   }
 }

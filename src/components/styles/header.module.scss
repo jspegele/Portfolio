@@ -1,8 +1,8 @@
 @import '../../styles/colors.scss';
 
 .header-wrapper {
-  background-color: $surface;
-  box-shadow: 0 3px 3px lighten($surface, 2%);
+  background-color: $navbar;
+  // box-shadow: 0 3px 3px lighten($surface-nav, 2%);
   display: block;
   position: fixed;
   top: 0;
@@ -20,7 +20,7 @@
 
 .title {
   align-items: center;
-  color: $on-surface;
+  color: $on-primary;
   display: flex;
 }
 
@@ -35,13 +35,13 @@
 }
 
 .nav-item {
-  background-color: $surface;
-  color: #bfbfbf;
+  background-color: $navbar;
+  color: $on-primary;
   margin-left: .4rem;
   padding: .4rem 1rem;
 }
 
-.nav-item:hover {
+.title:hover, .nav-item:hover {
   background-color: $primary;
   color: $on-primary;
 }

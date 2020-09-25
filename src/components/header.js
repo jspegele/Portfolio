@@ -17,13 +17,6 @@ const Header = () => {
           </Link>
           <nav className={headerStyles.nav}>
             <Link
-              to="/#top"
-              className={`${buttonStyles.button} ${headerStyles.navItem}`}
-              activeClassName={headerStyles.activeNavItem}
-            >
-              Home
-            </Link>
-            <Link
               to="/#about"
               className={`${buttonStyles.button} ${headerStyles.navItem}`}
               activeClassName={headerStyles.activeNavItem}

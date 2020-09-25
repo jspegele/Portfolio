@@ -7,38 +7,147 @@
 }
 
 .about {
-  font-size: 2rem;
-  padding: 12rem 0;
+  display: grid;
+  grid-gap: 6rem 3rem;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "header"
+    "services"
+    "profile"
+    "skills";
+  padding: 8rem 0;
+
+  h4 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-top: 1.2rem;
+  }
+  
+  p {
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    margin-top: 1.2rem;
+    text-align: center;
+  }
+  
+  a {
+    color: $secondary200;
+    text-decoration: none;
+  
+    &:hover {
+      color: $secondary300;
+    }
+  }
 }
 
-.roles {
-  display: flex;
-  flex-direction: column;
+.attribution {
+  display: none;
 }
 
-.role {
-  align-items: center;
+.header {
+  grid-area: header;
+  text-align: center;
+
+  h2 {
+    font-size: 3.2rem;
+  }
+
+  .hr {
+    background-color: $on-primary;
+    height: .2rem;
+    margin: 2rem auto 0;
+    width: 6rem;
+  }
+}
+
+.services {
+  grid-area: services;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: flex-start;
-  margin-top: 6rem;
+  justify-content: space-between;
 }
 
-.role>div {
-  flex: 0 0 auto;
-}
-
-.role>div:last-child {
-  flex: 0 1 100%;
-}
-
-.icon {
-  color: lighten($primary, 10%);
+.service {
+  align-items: center;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-bottom: 4rem;
+  width: 48%;
+
+  .icon {
+    align-items: center;
+    background-color: $on-primary;
+    border-radius: 50%;
+    color: $primary;
+    display: flex;
+    height: 8rem;
+    justify-content: center;
+    width: 8rem;
+
+    svg {
+      width: 2.4rem;
+    }
+  }
+}
+
+.profile {
   align-items: center;
-  padding-right: 2rem;
+  display: flex;
+  flex-direction: column;
+
+  .avatar {
+    max-width: 18rem;
+    width: 100%;
+  }
+}
+
+.skills {
+  ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 40rem;
+
+    li {
+      background-color: $on-primary;
+      border-radius: .4rem;
+      color: $primary800;
+      font-size: 1.4rem;
+      font-weight: 700;
+      margin: 0 .6rem .6rem 0;
+      width: 100%;
+
+      .fill {
+        background-color: $secondary200;
+        border-radius: .4rem;
+        transition: width .3s ease-in;
+      }
+        
+      span {
+        display: inline-block;
+        padding: .8rem 1.2rem;
+        white-space: nowrap;
+        width: 17rem;
+      }
+
+      .fill10 { width: 10%; }
+      .fill20 { width: 20%; }
+      .fill30 { width: 30%; }
+      .fill40 { width: 40%; }
+      .fill50 { width: 50%; }
+      .fill60 { width: 60%; }
+      .fill70 { width: 70%; }
+      .fill80 { width: 80%; }
+      .fill90 { width: 90%; }
+      .fill95 { width: 95%; }
+      .fill100 { width: 100%; }
+    }
+  }
 }
 
 .title {
@@ -51,42 +160,75 @@
 }
 
 @media (min-width: 451px) {
+  .service {
+    .icon {
+      height: 10rem;
+      width: 10rem;
 
+      svg {
+        width: 3.6rem;
+      }
+    }
+  }
+
+  .profile {
+    .avatar {
+      max-width: 25rem;
+    }
+  }
 }
 
 @media (min-width: 769px) {
   .about {
-    font-size: 2.4rem;
+    grid-gap: 8rem 4rem;
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "header header"
+      "services services"
+      "profile skills";
+
+    h4 {
+      font-size: 2.4rem;
+      font-weight: 600;
+      margin-top: 1.2rem;
+    }
   }
 
-  .roles {
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin: 0 -3.2rem;
-    padding: 3.6rem 0;
+  .header {
+    h2 {
+      font-size: 4.8rem;
+    }
   }
 
-  .role {
-    align-items: flex-start;
-    flex-basis: 33%;
-    flex-direction: column;
-    margin-top: 2rem;
-    padding: 0 3.2rem;
+  .service {
+    margin-bottom: 0;
+    width: 22.5%;
   }
 
-  .role>div {
-    flex: 0 1 auto;
-  }
+  .skills {
+    ul {
   
-  .role>div:last-child {
-    flex: 0 1 auto;
-  }
-
-  .title {
-    margin-top: 1.6rem;
-  }
-
-  .icon {
-
+      li {
+  
+        .fill {
+          width: 0;
+        }
+  
+        &:hover {
+          .fill10 { width: 10%; }
+          .fill20 { width: 20%; }
+          .fill30 { width: 30%; }
+          .fill40 { width: 40%; }
+          .fill50 { width: 50%; }
+          .fill60 { width: 60%; }
+          .fill70 { width: 70%; }
+          .fill80 { width: 80%; }
+          .fill90 { width: 90%; }
+          .fill95 { width: 95%; }
+          .fill100 { width: 100%; }
+        }
+      }
+    }
   }
 }

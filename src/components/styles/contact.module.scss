@@ -1,0 +1,62 @@
+@import '../../styles/colors.scss';
+
+.contact {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-size: 2.4rem;
+  margin: 0 auto;
+  padding: 8rem 0;
+
+  p {
+    padding-bottom: 2.4rem;
+    text-align: center;
+  }
+  
+  li {
+    padding-bottom: .6rem;
+  }
+
+  svg {
+    margin-right: 2rem;
+  }
+
+  a {
+    color: $link;
+    text-decoration: none;
+
+    &:hover {
+      color: $link-hover;
+    }
+  }
+}
+
+.header {
+  grid-area: header;
+  padding-bottom: 6rem;
+  text-align: center;
+
+  h2 {
+    font-size: 3.2rem;
+  }
+
+  .hr {
+    background-color: $on-surface;
+    height: .2rem;
+    margin: 2rem auto 0;
+    width: 6rem;
+  }
+}
+
+@media (min-width: 769px) {
+  .contact {
+    max-width: 60rem;
+    padding: 8rem 0 6rem;
+  }
+
+  .header {
+    h2 {
+      font-size: 4.8rem;
+    }
+  }
+}

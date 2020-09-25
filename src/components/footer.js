@@ -1,23 +1,38 @@
 import React from 'react'
+import { FaEnvelope, FaFileAlt, FaLinkedin, FaGithub, FaCodepen } from 'react-icons/fa'
 
 import Container from './container'
 
 import footerStyles from './styles/footer.module.scss'
+import resume from '../files/JustinSpegeleResume.pdf'
 
 const Footer = () => {
   return (
     <Container>
-      <footer className={footerStyles.footer} id="contact">
-        <div className={footerStyles.contact}>
-          <a href="mailto:hello@justinspegele.com?subject=Hello Justin">hello@justinspegele.com</a>
-        </div>
+      <footer className={footerStyles.footer}>
         <div className={footerStyles.links}>
-          <a href="/assets/JustinSpegeleResume.pdf" target="_blank">Resume</a>
-          <a href="https://www.linkedin.com/in/justinspegele/" target="_blank">LinkedIn</a>
-          <a href="https://github.com/jspegele" target="_blank">GitHub</a>
-          {/* <a href="https://codepen.io/jspegele" target="_blank">CodePen</a> */}
+          <a href="mailto:hello@justinspegele.com?subject=Hello Justin">
+            <FaEnvelope size="1.8rem" />
+            Say Hello
+          </a>
+          <a href={resume} target="_blank">
+            <FaFileAlt size="1.8rem" />
+            Resume
+          </a>
+          <a href="https://www.linkedin.com/in/justinspegele/" target="_blank">
+            <FaLinkedin size="1.8rem" />
+            LinkedIn
+          </a>
+          <a href="https://github.com/jspegele" target="_blank">
+            <FaGithub size="1.8rem" />
+            GitHub
+          </a>
+          {/* <a href="https://codepen.io/jspegele" target="_blank">
+            <FaCodepen size="1.8rem" />
+            CodePen
+          </a> */}
         </div>
-        <div className={footerStyles.copyright}>© 2020 Justin Spegele</div>
+        <div className={footerStyles.copyright}>Justin Spegele 2020</div>
       </footer>
     </Container>
   )

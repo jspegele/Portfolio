@@ -1,23 +1,94 @@
+// Light Theme
+$main-font: #393a42;
+$light-font: #6d6e77;
 
-$primary50: #f1ecfe;
-$primary100: #d4c5fc;
-$primary200: #b79ff9;
-$primary300: #9a78f7;
-$primary400: #784cf5;
-$primary500: #602bf3;
-$primary600: #480de7;
-$primary700: #3c0bc1;
-$primary800: #30099a;
-$primary900: #240774;
-$primary: $primary400;
+$primary50: #efe7fb;
+$primary100: #d4c5f5;
+$primary200: #b89def;
+$primary300: #9a74ea;
+$primary400: #8154e5;
+$primary500: #6734df;
+$primary600: #5c2fd9;
+$primary700: #4b27d0;
+$primary800: #3820ca;
+$primary900: #0010c0;
+$primary: $primary500;
+$on-primary: #fff;
 
-$secondary: #60f4bf;
+$secondary50: #e0f3fa;
+$secondary100: #b2e1f4;
+$secondary200: #80cdec;
+$secondary300: #53bae3;
+$secondary400: #34acdf;
+$secondary500: #1b9eda;
+$secondary600: #1690cc;
+$secondary700: #0f7eb9;
+$secondary800: #0d6da5;
+$secondary900: #004f85;
+$secondary: $secondary400;
+$on-secondary: $main-font;
 
-$accent300: #688ddf;
-$accent400: #4674d8;
-$accent500: #2959C2;
+$accent50: #f6e5fa;
+$accent100: #e8bdf3;
+$accent200: #d990ed;
+$accent300: #c960e5;
+$accent400: #bd34df;
+$accent500: #b000d8;
+$accent600: #9f00d3;
+$accent700: #8700cc;
+$accent800: #7200c7;
+$accent900: #4400ba;
+$accent: $accent400;
+$on-accent: $main-font;
+
+$link: #3456df;
+$link-hover: #2243c7;
+
+$surface: #fff;
+$surface01:	darken($surface, 5%);
+$surface02:	darken($surface, 7%);
+$surface03:	darken($surface, 8%);
+$surface04:	darken($surface, 9%);
+$surface06:	darken($surface, 11%);
+$surface08:	darken($surface, 12%);
+$surface12:	darken($surface, 14%);
+$surface16:	darken($surface, 15%);
+$surface24:	darken($surface, 16%);
+
+$on-surface: #121212;
+
+$navbar: lighten(#121212, 8%);
+
+// Dark Theme
+// $primary50: #f1ecfe;
+// $primary100: #d4c5fc;
+// $primary200: #b79ff9;
+// $primary300: #9a78f7;
+// $primary400: #784cf5;
+// $primary500: #602bf3;
+// $primary600: #480de7;
+// $primary700: #3c0bc1;
+// $primary800: #30099a;
+// $primary900: #240774;
+// $primary: $primary400;
+
+// $secondary: #60f4bf;
+
+// $accent300: #688ddf;
+// $accent400: #4674d8;
+// $accent500: #2959C2;
 $accent600: #244ea6;
 
-$surface: #121212;
-$on-surface: #fff;
-$on-primary: #fff;
+// $surface: #121212;
+// $surface01:	lighten($surface, 5%);
+// $surface02:	lighten($surface, 7%);
+// $surface03:	lighten($surface, 8%);
+// $surface04:	lighten($surface, 9%);
+// $surface06:	lighten($surface, 11%);
+// $surface08:	lighten($surface, 12%);
+// $surface12:	lighten($surface, 14%);
+// $surface16:	lighten($surface, 15%);
+// $surface24:	lighten($surface, 16%);
+
+// $on-surface: #fff;
+// $on-primary: #fff;

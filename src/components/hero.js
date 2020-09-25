@@ -1,40 +1,31 @@
 import React from 'react'
-import { FaEnvelope, FaPhone } from 'react-icons/fa'
+import { FaArrowRight } from 'react-icons/fa'
 
 import Container from './container'
 
 import heroStyles from './styles/hero.module.scss'
-import profilePic from '../images/profile-pic.png'
+import buttonStyles from './styles/buttons.module.scss'
+import heroBg from '../images/hero-bg.png'
 
 const Hero = () => (
   <div className={heroStyles.heroWrapper}>
-    <div className={heroStyles.overlay}>
-      <Container>
-        <section className={heroStyles.hero} id="top">
-          <img src={profilePic} alt="Justin" />
-          <h1 className={heroStyles.title}>I'm Justin Spegele</h1>
-          <div className={heroStyles.tagline}>
-            <p>
-              I'm a web developer, user experience researcher, and digital project manager 
-              helping small companies and large enterprises on their digital journeys.
-            </p>
-            <p>
-              Interested in pricing a small business website, personal portfolio or blog? Let's talk.
-            </p>
-            <ul>
-              <li>
-                <FaEnvelope size="1.8rem" />
-                <a href="mailto:hello@justinspegele.com?subject=Website Inquiry">hello@justinspegele.com</a>
-              </li>
-              <li>
-                <FaPhone size="1.8rem" />
-                +1 631 521 1659
-              </li>
-            </ul>
+    <Container>
+      <section className={heroStyles.hero} id="top">
+        <div className={heroStyles.spacer}></div>
+        <div className={heroStyles.heroBody}>
+          <h1 className={heroStyles.title}>Hi, I'm Justin Spegele</h1>
+          <h2 className={heroStyles.subtitle}>I'm a full-stack web developer, UX researcher, and digital PM</h2>
+          <div className={heroStyles.cta}>
+            <a className={buttonStyles.buttonHero} href="#about">
+              How I can help you <FaArrowRight size="1.6rem" />
+            </a>
           </div>
-        </section>
-      </Container>
-    </div>
+        </div>
+        <div className={heroStyles.heroFooter}>
+          <img src={heroBg} />
+        </div>
+      </section>
+    </Container>
   </div>
 )
 

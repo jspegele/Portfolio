@@ -6,6 +6,7 @@
   font-size: 1.6rem;
   padding: 1rem 2rem;
   text-decoration: none;
+  transition: background-color .2s;
 
   &:hover {
     background-color: $primary;
@@ -13,10 +14,39 @@
 }
 
 .button-primary {
+  @extend .button;
   background-color: $primary;
   color: $on-primary;
 }
 
 .button-primary-active {
+  @extend .button;
   background-color: $primary;
+  color: $on-primary;
+}
+
+.button-hero {
+  @extend .button;
+  align-items: center;
+  background: none;
+  border: 2px solid $on-surface;
+  color: $on-surface;
+  display: flex;
+  font-size: 2rem;
+  transition: border-color .2s, color .2s, background-color .3s;
+
+  svg {
+    margin-left: 1.2rem;
+    transition: transform .3s;
+  }
+
+  &:hover {
+    background-color: $primary;
+    border-color: $primary;
+    color: $on-primary;
+    
+    svg {
+      transform: rotate(90deg);
+    }
+  }
 }
