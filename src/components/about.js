@@ -34,7 +34,7 @@ const About = () => (
           <div className={aboutStyles.service}>
           <div className={aboutStyles.icon}><MdShowChart size="3.6rem" /></div>
             <h4>Effective</h4>
-            <p>SEO, built in analytics and successful calls to action.</p>
+            <p>SEO, built-in analytics and successful calls to action.</p>
           </div>
           <div className={aboutStyles.attribution}>Icons made by <a href="https://www.flaticon.local/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.local/" title="Flaticon">www.flaticon.local</a></div>
         </div>
@@ -43,7 +43,7 @@ const About = () => (
           <h4>Who am I?</h4>
           <p>
             I am a web developer, UX researcher and project manager who builds highly usable, engaging and 
-            effective websites and applications built with UX best practices and modern development frameworks 
+            effective websites and applications with UX best practices and modern development frameworks 
             to deliver fast, responsive, intuitive and effective customer experiences.
           </p>
           {/* <p><a href="#contact">Let's build something together.</a></p> */}
