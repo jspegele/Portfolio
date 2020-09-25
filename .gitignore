@@ -70,3 +70,6 @@ yarn-error.log
 
 # Asset Directories
 assets/
+
+# Local Netlify folder
+.netlify

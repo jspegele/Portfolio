@@ -46,7 +46,8 @@ const About = () => (
             effective websites and applications built with UX best practices and modern development frameworks 
             to deliver fast, responsive, intuitive and effective customer experiences.
           </p>
-          <p><a href="#contact">Let's build something together.</a></p>
+          {/* <p><a href="#contact">Let's build something together.</a></p> */}
+          <p>Let's build something together.</p>
         </div>
         <div className={aboutStyles.skills}>
           <ul>
