@@ -68,7 +68,7 @@ const About = () => (
             </li>
             <li>
               <div className={`${aboutStyles.fill} ${aboutStyles.fill60}`}>
-                <span>React /Gatsby</span>
+                <span>React / Gatsby</span>
               </div>
             </li>
             <li>

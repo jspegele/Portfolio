@@ -26,7 +26,7 @@
 .hero {
   display: flex;
   flex-direction: column;
-  height: 95vh;
+  height: 90vh;
   justify-content: space-between;
   padding: 12rem 0 0;
 }
@@ -89,6 +89,10 @@
 @media (min-width: 451px) {
   .container {
     padding: 0;
+  }
+
+  .hero {
+    height: 95vh;
   }
 
   .title {
