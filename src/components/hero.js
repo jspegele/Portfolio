@@ -17,7 +17,7 @@ const Hero = () => (
           <h2 className={heroStyles.subtitle}>I'm a full-stack web developer, UX researcher, and digital PM</h2>
           <div className={heroStyles.cta}>
             <a className={buttonStyles.buttonHero} href="#about">
-              How I can help you <FaArrowRight size="1.6rem" />
+              See how I can help you <FaArrowRight size="1.6rem" />
             </a>
           </div>
         </div>

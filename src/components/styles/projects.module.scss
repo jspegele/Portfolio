@@ -1,0 +1,83 @@
+@import '../../styles/colors.scss';
+
+.projects-wrapper {
+  background-color: $primary;
+  color: $on-primary;
+  padding: 12rem 0 8rem;
+  width: 100%;
+}
+
+.projects {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.project {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3.2rem;
+  width: 100%;
+
+  .info {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+
+    a {
+      align-items: center;
+      color: $on-primary;
+      display: flex;
+      display: flex;
+      padding-bottom: 1.2rem;
+      text-decoration: none;
+
+      svg {
+        font-size: 3.6rem;
+        margin-right: 1.2rem;
+      }
+
+      &:hover {
+        color: $secondary200;
+      }
+    }
+  }
+
+  .source {
+    flex-shrink: 0;
+    margin-left: 4rem;
+    text-align: right;
+  }
+
+}
+
+.header {
+  grid-area: header;
+  text-align: center;
+
+  h2 {
+    font-size: 3.2rem;
+  }
+
+  .hr {
+    background-color: $on-primary;
+    height: .2rem;
+    margin: 2rem auto 0;
+    width: 6rem;
+  }
+}
+
+@media (min-width: 451px) {
+
+}
+
+@media (min-width: 769px) {
+  .header {
+    h2 {
+      font-size: 4.8rem;
+    }
+  }
+}
+
