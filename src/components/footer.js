@@ -15,10 +15,6 @@ const Footer = () => {
             <FaEnvelope size="1.8rem" />
             Say Hello
           </a>
-          <a href={resume} target="_blank">
-            <FaFileAlt size="1.8rem" />
-            Resume
-          </a>
           <a href="https://www.linkedin.com/in/justinspegele/" target="_blank">
             <FaLinkedin size="1.8rem" />
             LinkedIn
@@ -26,6 +22,10 @@ const Footer = () => {
           <a href="https://github.com/jspegele" target="_blank">
             <FaGithub size="1.8rem" />
             GitHub
+          </a>
+          <a href={resume} target="_blank">
+            <FaFileAlt size="1.8rem" />
+            Resume
           </a>
           {/* <a href="https://codepen.io/jspegele" target="_blank">
             <FaCodepen size="1.8rem" />

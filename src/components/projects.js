@@ -15,16 +15,15 @@ const Projects = () => (
       </div>
       <section className={styles.projects}>
         <div className={styles.project}>
-          <div className={styles.info}>
-            <a
-              href="https://notebook.justinspegele.com"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <FaPenSquare />Notebook
-            </a>
+          <a
+            href="https://notebook.justinspegele.com"
+            target="_blank"
+            rel="noreferrer"
+            className={styles.info}
+          >
+            <h6><FaPenSquare />Notebook</h6>
             <span>A free and open-source note-taking app for the web.</span>
-          </div>
+          </a>
           <div className={styles.source}>
             <a
               className={buttonStyles.buttonSecondary}
@@ -37,16 +36,15 @@ const Projects = () => (
           </div>
         </div>
         <div className={styles.project}>
-          <div className={styles.info}>
-            <a
-              href="http://crypto.justinspegele.com/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <FaBitcoin />CryptoDash
-            </a>
+          <a
+            href="http://crypto.justinspegele.com/"
+            target="_blank"
+            rel="noreferrer"
+            className={styles.info}
+          >
+            <h6><FaBitcoin />CryptoDash</h6>
             <span>Crypto currency dashboard to track coins and look up prices and historical data.</span>
-          </div>
+          </a>
           <div className={styles.source}>
             <a
               className={buttonStyles.buttonSecondary}
@@ -59,16 +57,15 @@ const Projects = () => (
           </div>
         </div>
         <div className={styles.project}>
-          <div className={styles.info}>
-            <a
-              href="http://expensify.justinspegele.com/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <FaPiggyBank />Expensify
-            </a>
+          <a
+            href="http://expensify.justinspegele.com/"
+            target="_blank"
+            rel="noreferrer"
+            className={styles.info}
+          >
+            <h6><FaPiggyBank />Expensify</h6>
             <span>A simple and intuitive budgeting and expense management app.</span>
-          </div>
+          </a>
           <div className={styles.source}>
             <a
               className={buttonStyles.buttonSecondary}
@@ -81,16 +78,15 @@ const Projects = () => (
           </div>
         </div>
         <div className={styles.project}>
-          <div className={styles.info}>
-            <a
-              href="https://warframe-checklist.herokuapp.com/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <FaGamepad />Warframe Checklist
-            </a>
+          <a
+            href="https://warframe-checklist.herokuapp.com/"
+            target="_blank"
+            rel="noreferrer"
+            className={styles.info}
+          >
+            <h6><FaGamepad />Warframe Checklist</h6>
             <span>A tool for Warframe players to keep track of gear they've acquired and mastered, and what they still need.</span>
-          </div>
+          </a>
           <div className={styles.source}>
             <a
               className={buttonStyles.buttonSecondary}
@@ -103,16 +99,15 @@ const Projects = () => (
           </div>
         </div>
         <div className={styles.project}>
-          <div className={styles.info}>
-            <a
-              href="https://tny-link.herokuapp.com/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <FaLink />TnyLnk
-            </a>
+          <a
+            href="https://tny-link.herokuapp.com/"
+            target="_blank"
+            rel="noreferrer"
+            className={styles.info}
+          >
+            <h6><FaLink />TnyLnk</h6>
             <span>Link shortner that generates easy, readable, tiny links.</span>
-          </div>
+          </a>
           <div className={styles.source}>
             <a
               className={buttonStyles.buttonSecondary}
@@ -125,16 +120,15 @@ const Projects = () => (
           </div>
         </div>
         <div className={styles.project}>
-          <div className={styles.info}>
-            <a
-              href="http://devchat.justinspegele.com/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <FaRegCommentDots />DevChat
-            </a>
+          <a
+            href="http://devchat.justinspegele.com/"
+            target="_blank"
+            rel="noreferrer"
+            className={styles.info}
+          >
+            <h6><FaRegCommentDots />DevChat</h6>
             <span>A slack clone for development teams to collaborate via real-time chat.</span>
-          </div>
+          </a>
           <div className={styles.source}>
             <a
               className={buttonStyles.buttonSecondary}
