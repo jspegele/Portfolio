@@ -3,7 +3,7 @@
 .projects-wrapper {
   background-color: $primary;
   color: $on-primary;
-  padding: 12rem 0 8rem;
+  padding: 2rem 0 8rem;
   width: 100%;
 }
 
@@ -73,10 +73,16 @@
 }
 
 @media (min-width: 451px) {
-  
+  .projects-wrapper {
+    padding-top: 4rem
+  }
 }
 
 @media (min-width: 769px) {
+  .projects-wrapper {
+    padding-top: 6rem
+  }
+
   .header {
     h2 {
       font-size: 4.8rem;
@@ -99,6 +105,12 @@
       margin-left: 4rem;
       text-align: right;
     }
+  }
+}
+
+@media (min-width: 1280px) {
+  .projects-wrapper {
+    padding-top: 12rem
   }
 }
 
