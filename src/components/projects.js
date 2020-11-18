@@ -98,7 +98,7 @@ const Projects = () => (
             </a>
           </div>
         </div>
-        <div className={styles.project}>
+        {/* <div className={styles.project}>
           <a
             href="https://tny-link.herokuapp.com/"
             target="_blank"
@@ -118,7 +118,7 @@ const Projects = () => (
               Source Code
             </a>
           </div>
-        </div>
+        </div> */}
         <div className={styles.project}>
           <a
             href="http://devchat.justinspegele.com/"
