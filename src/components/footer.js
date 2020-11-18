@@ -5,6 +5,7 @@ import Container from './container'
 
 import footerStyles from './styles/footer.module.scss'
 import resume from '../files/JustinSpegeleResume.pdf'
+import enterprise from '../files/JustinSpegelePDFPortfolio.pdf'
 
 const Footer = () => {
   return (
@@ -26,6 +27,10 @@ const Footer = () => {
           <a href={resume} target="_blank">
             <FaFileAlt size="1.8rem" />
             Resume
+          </a>
+          <a href={enterprise} target="_blank">
+            <FaFileAlt size="1.8rem" />
+            Enterprise
           </a>
           {/* <a href="https://codepen.io/jspegele" target="_blank">
             <FaCodepen size="1.8rem" />
