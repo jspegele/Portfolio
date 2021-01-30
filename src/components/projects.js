@@ -1,8 +1,10 @@
 import React from 'react'
-import { FaPenSquare, FaBitcoin, FaPiggyBank, FaGamepad, FaLink, FaRegCommentDots } from 'react-icons/fa'
+import { FaPenSquare, FaBitcoin, FaPiggyBank, FaGamepad, FaRegCommentDots, FaExternalLinkAlt } from 'react-icons/fa'
 
 import Container from './container'
 
+import chenelSecuritiesThumb from '../images/chenel-securities-sm.png'
+import crwnClowthingThumb from '../images/crwn-clothing-sm.png'
 import styles from './styles/projects.module.scss'
 import buttonStyles from './styles/buttons.module.scss'
 
@@ -13,6 +15,38 @@ const Projects = () => (
         <h2>Work &amp; Projects</h2>
         <div className={styles.hr}></div>
       </div>
+      <section className={styles.works}>
+        <a
+          className={styles.work}
+          style={{ backgroundImage: "url(" + chenelSecuritiesThumb + ")" }}
+          href="https://chenelsecurities.com"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <div className={styles.workOverlay}>
+            <span className={styles.workName}>Chenel Securities</span>
+            <span className={styles.workDesc}>A Manhattan-based private investment firm</span>
+            <button className={styles.siteButton}>
+              Visit Site <FaExternalLinkAlt />
+            </button>
+          </div>
+        </a>
+        <a
+          className={styles.work}
+          style={{ backgroundImage: "url(" + crwnClowthingThumb + ")" }}
+          href="https://crwn.justinspegele.com/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <div className={styles.workOverlay}>
+            <span className={styles.workName}>Crwn Clothing</span>
+            <span className={styles.workDesc}>A fully functional, React-based ecommerce shop.</span>
+            <button className={styles.siteButton}>
+              Visit Site <FaExternalLinkAlt />
+            </button>
+          </div>
+        </a>
+      </section>
       <section className={styles.projects}>
         <div className={styles.project}>
           <a
