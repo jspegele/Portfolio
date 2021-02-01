@@ -20,15 +20,16 @@
   background-repeat: no-repeat;
   border-radius: 10px;
   display: block;
+  height: 165px;
   margin-bottom: 2.4rem;
-  max-width: 80%;
   outline: none;
   position: relative;
   width: 80%;
+  width: 280px;
 
   .work-overlay {
     align-items: center;
-    background: rgba(18, 18, 18, .8);
+    background: rgba(18, 18, 18, .7);
     border-radius: 10px;
     color: $surface;
     display: flex;
@@ -60,6 +61,7 @@
     .site-button {
       @extend .button-secondary;
       background-color: $surface;
+      display: none;
       margin-top: 1.2rem;
       opacity: 0;
       transition: opacity .2s;
@@ -163,6 +165,10 @@
     height: 236px;
     margin: 0 1.2rem 2.4rem;
     width: 400px;
+
+    .work-overlay .site-button {
+      display: block;
+    }
   }
 }
 
