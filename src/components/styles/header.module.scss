@@ -1,7 +1,7 @@
 @import '../../styles/colors.scss';
 
 .header-wrapper {
-  background-color: $navbar;
+  background-color: $surface02;
   // box-shadow: 0 3px 3px lighten($surface-nav, 2%);
   display: block;
   position: fixed;
@@ -35,7 +35,6 @@
 }
 
 .nav-item {
-  background-color: $navbar;
   color: $on-primary;
   margin-left: .4rem;
   padding: .4rem 1rem;

@@ -20,8 +20,11 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
 }
 
 body {
-  background-color: $surface01;
+  background-color: $surface;
   color: $on-surface;
+  font-family: 'Raleway', Helvetica, sans-serif;
+  font-size: 1.6rem;
+  overflow-x: hidden;
 }
 
 ol, ul {
@@ -31,11 +34,4 @@ ol, ul {
 img {
   max-width: 100%;
   height: auto;
-}
-
-body {
-  color: #333;
-  font-family: 'Raleway', Helvetica, sans-serif;
-  font-size: 1.6rem;
-  overflow-x: hidden;
 }

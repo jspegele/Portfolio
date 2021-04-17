@@ -31,7 +31,7 @@
     align-items: center;
     background: rgba(18, 18, 18, .7);
     border-radius: 10px;
-    color: $surface;
+    color: $on-surface;
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -60,14 +60,15 @@
 
     .site-button {
       @extend .button-secondary;
-      background-color: $surface;
+      background-color: $on-surface;
+      cursor: pointer;
       display: none;
       margin-top: 1.2rem;
       opacity: 0;
       transition: opacity .2s;
 
       &:hover {
-        background-color: $surface;
+        background-color: $on-surface;
       }
     }
   }

@@ -37,7 +37,7 @@ const Footer = () => {
             CodePen
           </a> */}
         </div>
-        <div className={footerStyles.copyright}>Justin Spegele 2020</div>
+        <div className={footerStyles.copyright}>&copy; {(new Date().getFullYear())} Justin Spegele</div>
       </footer>
     </Container>
   )
