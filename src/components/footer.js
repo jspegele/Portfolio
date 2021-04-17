@@ -16,23 +16,23 @@ const Footer = () => {
             <FaEnvelope size="1.8rem" />
             Say Hello
           </a>
-          <a href="https://www.linkedin.com/in/justinspegele/" target="_blank">
+          <a href="https://www.linkedin.com/in/justinspegele/" target="_blank" rel="noreferrer">
             <FaLinkedin size="1.8rem" />
             LinkedIn
           </a>
-          <a href="https://github.com/jspegele" target="_blank">
+          <a href="https://github.com/jspegele" target="_blank" rel="noreferrer">
             <FaGithub size="1.8rem" />
             GitHub
           </a>
-          <a href={resume} target="_blank">
+          <a href={resume} target="_blank" rel="noreferrer">
             <FaFileAlt size="1.8rem" />
             Resume
           </a>
-          <a href={enterprise} target="_blank">
+          <a href={enterprise} target="_blank" rel="noreferrer">
             <FaFileAlt size="1.8rem" />
             Enterprise
           </a>
-          {/* <a href="https://codepen.io/jspegele" target="_blank">
+          {/* <a href="https://codepen.io/jspegele" target="_blank" rel="noreferrer">
             <FaCodepen size="1.8rem" />
             CodePen
           </a> */}
