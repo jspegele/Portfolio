@@ -22,7 +22,7 @@ const Hero = () => (
           </div>
         </div>
         <div className={heroStyles.heroFooter}>
-          <img src={heroBg} />
+          <img src={heroBg} alt="" />
         </div>
       </section>
     </Container>

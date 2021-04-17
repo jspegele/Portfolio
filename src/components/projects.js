@@ -55,7 +55,7 @@ const Projects = () => (
             rel="noreferrer"
             className={styles.info}
           >
-            <h6><FaPenSquare />Notebook</h6>
+            <h4><FaPenSquare />Notebook</h4>
             <span>A free and open-source note-taking app for the web.</span>
           </a>
           <div className={styles.source}>
@@ -76,7 +76,7 @@ const Projects = () => (
             rel="noreferrer"
             className={styles.info}
           >
-            <h6><FaBitcoin />CryptoDash</h6>
+            <h4><FaBitcoin />CryptoDash</h4>
             <span>Crypto currency dashboard to track coins and look up prices and historical data.</span>
           </a>
           <div className={styles.source}>
@@ -97,7 +97,7 @@ const Projects = () => (
             rel="noreferrer"
             className={styles.info}
           >
-            <h6><FaPiggyBank />Expensify</h6>
+            <h4><FaPiggyBank />Expensify</h4>
             <span>A simple and intuitive budgeting and expense management app.</span>
           </a>
           <div className={styles.source}>
@@ -118,7 +118,7 @@ const Projects = () => (
             rel="noreferrer"
             className={styles.info}
           >
-            <h6><FaGamepad />Warframe Checklist</h6>
+            <h4><FaGamepad />Warframe Checklist</h4>
             <span>A tool for Warframe players to keep track of gear they've acquired and mastered, and what they still need.</span>
           </a>
           <div className={styles.source}>
@@ -139,7 +139,7 @@ const Projects = () => (
             rel="noreferrer"
             className={styles.info}
           >
-            <h6><FaLink />TnyLnk</h6>
+            <h4><FaLink />TnyLnk</h4>
             <span>Link shortner that generates easy, readable, tiny links.</span>
           </a>
           <div className={styles.source}>
@@ -160,7 +160,7 @@ const Projects = () => (
             rel="noreferrer"
             className={styles.info}
           >
-            <h6><FaRegCommentDots />DevChat</h6>
+            <h4><FaRegCommentDots />DevChat</h4>
             <span>A slack clone for development teams to collaborate via real-time chat.</span>
           </a>
           <div className={styles.source}>

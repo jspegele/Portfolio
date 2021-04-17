@@ -18,29 +18,29 @@ const About = () => (
         <div className={aboutStyles.services}>
           <div className={aboutStyles.service}>
             <div className={aboutStyles.icon}><MdDevices size="3.6rem" /></div>
-            <h4>Responsive</h4>
+            <h3>Responsive</h3>
             <p>Sites that work on all devices and browsers.</p>
           </div>
           <div className={aboutStyles.service}>
           <div className={aboutStyles.icon}><MdFlightTakeoff size="3.6rem" /></div>
-            <h4>Fast</h4>
+            <h3>Fast</h3>
             <p>Lightning fast load times and interactions.</p>
           </div>
           <div className={aboutStyles.service}>
           <div className={aboutStyles.icon}><MdLightbulbOutline size="3.6rem" /></div>
-            <h4>Intuitive</h4>
+            <h3>Intuitive</h3>
             <p>A strong focus on great UX and customer success.</p>
           </div>
           <div className={aboutStyles.service}>
           <div className={aboutStyles.icon}><MdShowChart size="3.6rem" /></div>
-            <h4>Effective</h4>
+            <h3>Effective</h3>
             <p>SEO, built-in analytics and successful calls to action.</p>
           </div>
           <div className={aboutStyles.attribution}>Icons made by <a href="https://www.flaticon.local/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.local/" title="Flaticon">www.flaticon.local</a></div>
         </div>
         <div className={aboutStyles.profile}>
           <img className={aboutStyles.avatar} src={avatar} alt="Justin" />
-          <h4>Who am I?</h4>
+          <h3>Who am I?</h3>
           <p>
             I am a web developer, UX researcher and project manager who builds highly usable, engaging and 
             effective websites and applications with UX best practices and modern development frameworks 
