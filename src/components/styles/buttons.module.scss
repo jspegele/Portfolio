@@ -32,11 +32,11 @@
 
 .button-secondary {
   @extend .button;
-  background-color: $secondary;
+  background-color: $on-primary;
   color: $dark-font;
 
   &:hover {
-    background-color: $secondary600;
+    background-color: $secondary100;
   }
 }
 
