@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import { RiCodeSSlashLine } from 'react-icons/ri'
 
 import buttonStyles from './styles/buttons.module.scss'
 import headerStyles from './styles/header.module.scss'
@@ -12,8 +13,8 @@ const Header = () => {
     <div className={headerStyles.headerWrapper}>
       <Container>
         <header className={headerStyles.header}>
-          <Link to="/" className={`${buttonStyles.button} ${headerStyles.title}`}>
-            Justin Spegele
+          <Link to="/" className={headerStyles.title}>
+            <RiCodeSSlashLine /> Justin Spegele
           </Link>
           <nav className={headerStyles.nav}>
             <Link

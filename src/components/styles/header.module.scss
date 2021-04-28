@@ -1,8 +1,9 @@
 @import '../../styles/colors.scss';
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
 
 .header-wrapper {
   background-color: $surface02;
-  // box-shadow: 0 3px 3px lighten($surface-nav, 2%);
+  box-shadow: 0 2px 8px 1px rgba(0,0,0,.2);
   display: block;
   position: fixed;
   top: 0;
@@ -13,23 +14,29 @@
 .header {
   align-items: center;
   display: flex;
-  height: 6.4rem;
-  justify-content: space-between;
-  margin: 0 -2rem;
+  flex-direction: column;
+  padding: 1rem 0;
 }
 
 .title {
   align-items: center;
   color: $on-primary;
   display: flex;
-}
+  font-family: 'PT Sans', 'Raleway', Helvetica, sans-serif;
+  font-size: 2.4rem;
+  text-decoration: none;
+  
+  svg {
+    margin-right: 1rem;
+  }
 
-.title img {
-  width: 32px;
+  &:hover {
+    color: darken($on-primary, 12%);
+  }
 }
 
 .nav {
-  display: none;
+  display: flex;
   justify-content: space-evenly;
   margin-left: 1.6rem;
 }
@@ -40,7 +47,7 @@
   padding: .4rem 1rem;
 }
 
-.title:hover, .nav-item:hover {
+.nav-item:hover {
   background-color: $primary;
   color: $on-primary;
 }
@@ -62,6 +69,11 @@
 }
 
 @media (min-width: 769px) {
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
   .nav-item {
     margin-left: .8rem;
     padding: 1rem 2rem;

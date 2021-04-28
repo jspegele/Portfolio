@@ -20,7 +20,7 @@ const Projects = () => (
   <div className={styles.projectsWrapper} id="projects">
     <Container>
       <div className={styles.header}>
-        <h2>Work &amp; Projects</h2>
+        <h2>Recent Work</h2>
         <div className={styles.hr}></div>
       </div>
       <section className={styles.works}>
@@ -72,7 +72,7 @@ const Projects = () => (
             </p>
             <a
               className={styles.siteButton}
-              href="https://crwn.justinspegele.com/"
+              href="https://crwn-books.herokuapp.com/"
               target="_blank"
               rel="noreferrer"
             >
@@ -81,6 +81,10 @@ const Projects = () => (
           </div>
         </div>
       </section>
+      <div className={styles.header} style={{ marginTop: '80px' }}>
+        <h2>Misc Projects</h2>
+        <div className={styles.hr}></div>
+      </div>
       <section className={styles.projects}>
         <div className={styles.project}>
           <a
