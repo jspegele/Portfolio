@@ -17,10 +17,10 @@ import styles from "./styles/projects.module.scss"
 import buttonStyles from "./styles/buttons.module.scss"
 
 const Projects = () => (
-  <div className={styles.projectsWrapper} id="projects">
+  <div className={styles.projectsWrapper}>
     <Container>
       <div className={styles.header}>
-        <h2>Recent Work</h2>
+        <h2 id="projects">Recent Work</h2>
         <div className={styles.hr}></div>
       </div>
       <section className={styles.works}>
