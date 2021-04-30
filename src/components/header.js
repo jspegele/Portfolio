@@ -1,9 +1,10 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import { RiCodeSSlashLine } from 'react-icons/ri'
 
 import buttonStyles from './styles/buttons.module.scss'
 import headerStyles from './styles/header.module.scss'
+
+import imgLogo from '../images/js-logo.png'
 
 import Container from './container'
 
@@ -14,7 +15,7 @@ const Header = () => {
       <Container>
         <header className={headerStyles.header}>
           <Link to="/" className={headerStyles.title}>
-            <RiCodeSSlashLine /> Justin Spegele
+            <img src={imgLogo} alt="" />Justin Spegele
           </Link>
           <nav className={headerStyles.nav}>
             <Link

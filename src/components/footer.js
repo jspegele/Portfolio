@@ -5,6 +5,8 @@ import Container from './container'
 
 import footerStyles from './styles/footer.module.scss'
 import resume from '../files/JustinSpegeleResume.pdf'
+
+import imgLogo from '../images/js-logo.png'
 import enterprise from '../files/JustinSpegelePDFPortfolio.pdf'
 
 const Footer = () => {
@@ -36,6 +38,9 @@ const Footer = () => {
             <FaCodepen size="1.8rem" />
             CodePen
           </a> */}
+        </div>
+        <div className={footerStyles.logo}>
+          <img src={imgLogo} alt="" />
         </div>
         <div className={footerStyles.copyright}>&copy; {(new Date().getFullYear())} Justin Spegele</div>
       </footer>
