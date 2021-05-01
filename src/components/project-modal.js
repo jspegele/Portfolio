@@ -13,7 +13,7 @@ const ProjectModal = ({ isActive, handleCloseModal, title, images, description, 
         <p className={styles.modalContentTitle}>
           {title}
         </p>
-        <button className={styles.modalClose} onClick={handleCloseModal}></button>
+        <button className={styles.modalClose} onClick={handleCloseModal} aria-label="Close"></button>
       </header>
       <div className={styles.modalContentImage}>
         {images.length && (

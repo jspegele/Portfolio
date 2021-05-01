@@ -5,7 +5,6 @@ import {
   FaPiggyBank,
   FaGamepad,
   FaRegCommentDots,
-  FaExternalLinkAlt,
 } from "react-icons/fa"
 
 import Container from "./container"
@@ -42,7 +41,7 @@ const Projects = () => {
           <div className={styles.hr}></div>
         </div>
         <section className={styles.works}>
-          <div className={styles.work} onClick={() => setModal2Open(true)}>
+          <div className={styles.work} role="button" tabIndex={0} onClick={() => setModal2Open(true)} onKeyDown={(ev) => {if (ev.keyCode === 13) setModal2Open(true)}}>
             <img src={pfsThumb} alt="Parasky Flute Studios screenshot" />
             <div className={styles.workContent}>
               <h3>Parasky Flute Studios</h3>
@@ -83,7 +82,7 @@ const Projects = () => {
             }
             link="https://paraskyflutestudios.com"
           />
-          <div className={styles.work} onClick={() => setModal1Open(true)}>
+          <div className={styles.work} role="button" tabIndex={0} onClick={() => setModal1Open(true)} onKeyDown={(ev) => {if (ev.keyCode === 13) setModal1Open(true)}}>
             <img src={chenelSecuritiesThumb} alt="Chenel Capital screenshot" />
             <div className={styles.workContent}>
               <h3>Chenel Capital</h3>
@@ -124,7 +123,7 @@ const Projects = () => {
             }
             link="https://chenelcapital.com"
           />
-          <div className={styles.work} onClick={() => setModal3Open(true)}>
+          <div className={styles.work} role="button" tabIndex={0} onClick={() => setModal3Open(true)} onKeyDown={(ev) => {if (ev.keyCode === 13) setModal3Open(true)}}>
             <img src={crwnClothingThumb} alt="Crwn Clothing screenshot" />
             <div className={styles.workContent}>
               <h3>Crwn Clothing</h3>

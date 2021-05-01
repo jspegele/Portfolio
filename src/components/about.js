@@ -1,6 +1,5 @@
 import React from 'react'
 import { MdDevices, MdFlightTakeoff, MdLightbulbOutline, MdShowChart } from 'react-icons/md'
-import { FaAngleDoubleRight } from 'react-icons/fa'
 
 import Container from './container'
 

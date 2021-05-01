@@ -13,7 +13,8 @@
 .header {
   align-items: center;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
   padding: 1rem 0;
 }
 
@@ -30,8 +31,8 @@
     width: 50px;
   }
   
-  svg {
-    margin-right: 1rem;
+  span {
+    display: none;
   }
 
   &:hover {
@@ -41,19 +42,18 @@
 
 .nav {
   display: flex;
-  justify-content: space-evenly;
-  margin-left: 1.6rem;
 }
 
 .nav-item {
   color: $on-primary;
+  font-size: 1.4rem;
   margin-left: .4rem;
   padding: .4rem 1rem;
-}
 
-.nav-item:hover {
-  background-color: $primary;
-  color: $on-primary;
+  &:hover {
+    background-color: $primary;
+    color: $on-primary;
+  }
 }
 
 .active-nav-item {
@@ -67,15 +67,17 @@
   }
 
   .nav-item {
+    font-size: 1.6rem;
     margin-left: .6rem;
     padding: .6rem 1.6rem;
   }
 }
 
 @media (min-width: 769px) {
-  .header {
-    flex-direction: row;
-    justify-content: space-between;
+  .title {
+    span {
+      display: inline;
+    }
   }
 
   .nav-item {

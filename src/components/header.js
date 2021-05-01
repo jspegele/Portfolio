@@ -15,7 +15,7 @@ const Header = () => {
       <Container>
         <header className={headerStyles.header}>
           <Link to="/" className={headerStyles.title}>
-            <img src={imgLogo} alt="" />Justin Spegele
+            <img src={imgLogo} alt="" /><span>Justin Spegele</span>
           </Link>
           <nav className={headerStyles.nav}>
             <Link

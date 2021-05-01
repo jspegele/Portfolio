@@ -85,6 +85,8 @@
     display: flex;
     flex-direction: column;
     flex-shrink: 0;
+    font-size: 1.4rem;
+    line-height: 1.3;
     justify-content: flex-start;
     position: relative;
 
@@ -153,6 +155,15 @@
   &:focus,
   &:hover {
     background-color: rgba(10,10,10,.3);
+  }
+}
+
+@media (min-width: 451px) {
+  .modal-content {
+    .modal-content-foot {
+      font-size: 1.6rem;
+      line-height: 1.6;
+    }
   }
 }
 

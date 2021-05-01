@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaEnvelope, FaFileAlt, FaLinkedin, FaGithub, FaCodepen } from 'react-icons/fa'
+import { FaEnvelope, FaFileAlt, FaLinkedin, FaGithub } from 'react-icons/fa'
 
 import Container from './container'
 
