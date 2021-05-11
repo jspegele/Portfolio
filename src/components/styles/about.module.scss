@@ -2,7 +2,7 @@
 
 .about-wrapper {
   background-color: $primary;
-  color: $on-primary;
+  color: $font-light;
   width: 100%;
 }
 
@@ -30,15 +30,6 @@
     margin-top: 1.2rem;
     text-align: center;
   }
-  
-  a {
-    color: $secondary200;
-    text-decoration: none;
-  
-    &:hover {
-      color: $secondary300;
-    }
-  }
 }
 
 .attribution {
@@ -54,7 +45,7 @@
   }
 
   .hr {
-    background-color: $on-primary;
+    background-color: $font-light;
     height: .2rem;
     margin: 2rem auto 0;
     width: 6rem;
@@ -80,7 +71,7 @@
 
   .icon {
     align-items: center;
-    background-color: $on-primary;
+    background-color: $font-light;
     border-radius: 50%;
     color: $primary;
     display: flex;
@@ -114,16 +105,16 @@
     max-width: 40rem;
 
     li {
-      background-color: $on-primary;
+      background-color: $font-light;
       border-radius: .4rem;
-      color: $primary800;
+      color: $font-dark;
       font-size: 1.4rem;
       font-weight: 700;
       margin: 0 .6rem .6rem 0;
       width: 100%;
 
       .fill {
-        background-color: $secondary200;
+        background-color: lighten($secondary-light, 32%);
         border-radius: .4rem;
         transition: width .3s ease-in;
       }

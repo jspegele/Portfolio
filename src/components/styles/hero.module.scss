@@ -19,7 +19,7 @@
 
 .hero-body {
   align-items: center;
-  color: $on-surface;
+  color: $font-light;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -52,7 +52,7 @@
   margin: 2.4rem 0 0;
 
   a {
-    color: $on-surface;
+    color: $font-light;
     text-decoration: none;
     transition: color .2s;
   }
@@ -61,11 +61,11 @@
 .subtitle {
   font-size: 2rem;
   font-weight: 400;
-  margin: 2rem 0 0;
+  margin: 4rem 0 0;
 }
 
 .cta {
-  margin-top: 3rem;
+  margin-top: 4rem;
 }
 
 @media (min-width: 451px) {
@@ -87,7 +87,11 @@
   
   .subtitle {
     font-size: 2.4rem;
-    margin-top: 2.4rem;
+    margin-top: 6rem;
+  }
+
+  .cta {
+    margin-top: 6rem;
   }
 }
 

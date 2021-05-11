@@ -1,13 +1,19 @@
 @import '../../styles/colors.scss';
 
 .button {
+  align-items: center;
   border: none;
   border-radius: .5rem;
+  display: flex;
   font-size: 1.6rem;
   outline: none;
   padding: 1rem 2rem;
   text-decoration: none;
-  transition: background-color .2s;
+  transition: background-color .2s, color .2s;
+
+  svg {
+    margin-right: .8rem;
+  }
 
   &:hover {
     background-color: $primary;
@@ -21,26 +27,39 @@
 .button-primary {
   @extend .button;
   background-color: $primary;
-  color: $on-primary;
+  color: $font-light;
 
   &:hover {
-    background-color: $primary700;
+    background-color: darken($primary, 6%);
   }
 }
 
 .button-primary-active {
   @extend .button;
   background-color: $primary;
-  color: $on-primary;
+  color: $font-light;
 }
 
 .button-secondary {
   @extend .button;
-  background-color: $on-primary;
-  color: $dark-font;
+  background-color: $primary-light;
+  color: $font-dark;
 
   &:hover {
-    background-color: $secondary100;
+    background-color: darken($primary-light, 6%);
+  }
+}
+
+.button-tertiary {
+  @extend .button;
+  background: none;
+  border: 1px solid $primary-light;
+  color: $font-light;
+  padding: .6rem 1.2rem;
+
+  &:hover {
+    background-color: $primary-light;
+    color: $font-dark
   }
 }
 
@@ -48,8 +67,8 @@
   @extend .button;
   align-items: center;
   background: none;
-  border: 2px solid $on-surface;
-  color: $on-surface;
+  border: 2px solid $font-light;
+  color: $font-light;
   display: flex;
   font-size: 2rem;
   transition: border-color .2s, color .2s, background-color .3s;
@@ -62,7 +81,7 @@
   &:hover {
     background-color: $primary;
     border-color: $primary;
-    color: $on-primary;
+    color: $font-light;
     
     svg {
       transform: rotate(90deg);

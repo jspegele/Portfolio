@@ -5,7 +5,9 @@ import {
   FaPiggyBank,
   FaGamepad,
   FaRegCommentDots,
+  FaGithub
 } from "react-icons/fa"
+import { RiTerminalWindowFill } from "react-icons/ri"
 
 import Container from "./container"
 import ProjectModal from "./project-modal"
@@ -34,10 +36,10 @@ const Projects = () => {
   const [modal3Open, setModal3Open] = useState(false)
 
   return (
-    <div className={styles.projectsWrapper}>
+    <div id="work" className={styles.projectsWrapper}>
       <Container>
         <div className={styles.header}>
-          <h2 id="projects">Recent Work</h2>
+          <h2>Recent Work</h2>
           <div className={styles.hr}></div>
         </div>
         <section className={styles.works}>
@@ -157,36 +159,34 @@ const Projects = () => {
         </div>
         <section className={styles.projects}>
           <div className={styles.project}>
-            <a
-              href="https://notebook.justinspegele.com"
-              target="_blank"
-              rel="noreferrer"
-              className={styles.info}
-            >
+            <div className={styles.description}>
               <h4>
                 <FaPenSquare />
                 Notebook
               </h4>
               <span>A free and open-source note-taking app for the web.</span>
-            </a>
-            <div className={styles.source}>
+            </div>
+            <div className={styles.links}>
               <a
-                className={buttonStyles.buttonSecondary}
+                className={buttonStyles.buttonTertiary}
+                href="https://notebook.justinspegele.com"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <RiTerminalWindowFill /> Live Site
+              </a>
+              <a
+                className={buttonStyles.buttonTertiary}
                 href="https://github.com/jspegele/Notebook"
                 target="_blank"
                 rel="noreferrer"
               >
-                Source Code
+                <FaGithub /> GitHub
               </a>
             </div>
           </div>
           <div className={styles.project}>
-            <a
-              href="http://crypto.justinspegele.com/"
-              target="_blank"
-              rel="noreferrer"
-              className={styles.info}
-            >
+            <div className={styles.description}>
               <h4>
                 <FaBitcoin />
                 CryptoDash
@@ -195,25 +195,28 @@ const Projects = () => {
                 Crypto currency dashboard to track coins and look up prices and
                 historical data.
               </span>
-            </a>
-            <div className={styles.source}>
+            </div>
+            <div className={styles.links}>
               <a
-                className={buttonStyles.buttonSecondary}
+                className={buttonStyles.buttonTertiary}
+                href="http://crypto.justinspegele.com/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <RiTerminalWindowFill /> Live Site
+              </a>
+              <a
+                className={buttonStyles.buttonTertiary}
                 href="https://github.com/jspegele/cryptodash"
                 target="_blank"
                 rel="noreferrer"
               >
-                Source Code
+                <FaGithub /> GitHub
               </a>
             </div>
           </div>
           <div className={styles.project}>
-            <a
-              href="http://expensify.justinspegele.com/"
-              target="_blank"
-              rel="noreferrer"
-              className={styles.info}
-            >
+            <div className={styles.description}>
               <h4>
                 <FaPiggyBank />
                 Expensify
@@ -221,25 +224,28 @@ const Projects = () => {
               <span>
                 A simple and intuitive budgeting and expense management app.
               </span>
-            </a>
-            <div className={styles.source}>
+            </div>
+            <div className={styles.links}>
               <a
-                className={buttonStyles.buttonSecondary}
+                className={buttonStyles.buttonTertiary}
+                href="http://expensify.justinspegele.com/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <RiTerminalWindowFill /> Live Site
+              </a>
+              <a
+                className={buttonStyles.buttonTertiary}
                 href="https://github.com/jspegele/expensify-app"
                 target="_blank"
                 rel="noreferrer"
               >
-                Source Code
+                <FaGithub /> GitHub
               </a>
             </div>
           </div>
           <div className={styles.project}>
-            <a
-              href="https://warframe-checklist.herokuapp.com/"
-              target="_blank"
-              rel="noreferrer"
-              className={styles.info}
-            >
+            <div className={styles.description}>
               <h4>
                 <FaGamepad />
                 Warframe Checklist
@@ -248,46 +254,52 @@ const Projects = () => {
                 A tool for Warframe players to keep track of gear they've
                 acquired and mastered, and what they still need.
               </span>
-            </a>
-            <div className={styles.source}>
+            </div>
+            <div className={styles.links}>
               <a
-                className={buttonStyles.buttonSecondary}
+                className={buttonStyles.buttonTertiary}
+                href="https://warframe-checklist.herokuapp.com/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <RiTerminalWindowFill /> Live Site
+              </a>
+              <a
+                className={buttonStyles.buttonTertiary}
                 href="https://github.com/jspegele/warframe-checklist"
                 target="_blank"
                 rel="noreferrer"
               >
-                Source Code
+                <FaGithub /> GitHub
               </a>
             </div>
           </div>
           {/* <div className={styles.project}>
-            <a
-              href="https://tny-link.herokuapp.com/"
-              target="_blank"
-              rel="noreferrer"
-              className={styles.info}
-            >
+            <div className={styles.description}>
               <h4><FaLink />TnyLnk</h4>
               <span>Link shortner that generates easy, readable, tiny links.</span>
-            </a>
-            <div className={styles.source}>
+            </div>
+            <div className={styles.links}>
               <a
-                className={buttonStyles.buttonSecondary}
+                className={buttonStyles.buttonTertiary}
+                href="https://tny-link.herokuapp.com/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <RiTerminalWindowFill /> Live Site
+              </a>
+              <a
+                className={buttonStyles.buttonTertiary}
                 href="https://github.com/jspegele/tny-lnk"
                 target="_blank"
                 rel="noreferrer"
               >
-                Source Code
+                <FaGithub /> GitHub
               </a>
             </div>
           </div> */}
           <div className={styles.project}>
-            <a
-              href="http://devchat.justinspegele.com/"
-              target="_blank"
-              rel="noreferrer"
-              className={styles.info}
-            >
+            <div className={styles.description}>
               <h4>
                 <FaRegCommentDots />
                 DevChat
@@ -296,15 +308,23 @@ const Projects = () => {
                 A slack clone for development teams to collaborate via real-time
                 chat.
               </span>
-            </a>
-            <div className={styles.source}>
+            </div>
+            <div className={styles.links}>
               <a
-                className={buttonStyles.buttonSecondary}
+                className={buttonStyles.buttonTertiary}
+                href="http://devchat.justinspegele.com/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <RiTerminalWindowFill /> Live Site
+              </a>
+              <a
+                className={buttonStyles.buttonTertiary}
                 href="https://github.com/jspegele/Devchat"
                 target="_blank"
                 rel="noreferrer"
               >
-                Source Code
+                <FaGithub /> GitHub
               </a>
             </div>
           </div>

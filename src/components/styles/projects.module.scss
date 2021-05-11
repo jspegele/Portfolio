@@ -2,10 +2,14 @@
 @import './buttons.module.scss';
 
 .projects-wrapper {
-  background-color: $primary;
-  color: $on-primary;
+  background-color: $surface02;
+  color: $font-light;
   padding: 2rem 0 8rem;
   width: 100%;
+}
+
+.header {
+  margin-top: 4rem;
 }
 
 .works {
@@ -60,7 +64,7 @@
       }
   
       &:hover {
-        color: $secondary200;
+        color: $secondary-light;
       }
     }
   }
@@ -90,9 +94,8 @@
   margin-top: 4rem;
   width: 100%;
 
-  a.info {
+  .description {
     align-items: flex-start;
-    color: $on-primary;
     display: flex;
     flex-direction: column;
     padding-bottom: .6rem;
@@ -111,19 +114,19 @@
     }
 
     span {
-      color: $light-font;
       font-size: 1.8rem;
-    }
-
-    &:hover,
-    &:hover span {
-      color: $secondary100;
     }
   }
 
-  .source {
+  .links {
+    align-items: center;
+    display: flex;
     flex-shrink: 0;
     margin-top: 2rem;
+
+    a {
+      margin-right: 2rem;
+    }
   }
 
 }
@@ -137,7 +140,7 @@
   }
 
   .hr {
-    background-color: $on-primary;
+    background-color: $font-light;
     height: .2rem;
     margin: 2rem auto 0;
     width: 6rem;
@@ -151,24 +154,6 @@
 
   .work {
     margin-bottom: 6rem;
-  }
-  
-  .project {
-    align-items: center;
-    flex-direction: row;
-    margin-top: 3.2rem;
-
-    .info {
-      a {
-        padding-bottom: 1.2rem;
-      }
-    }
-
-    .source {
-      margin-top: 0;
-      margin-left: 4rem;
-      text-align: right;
-    }
   }
 }
 
@@ -191,6 +176,28 @@
   .work {
     margin-bottom: 2rem;
     width: 30%;
+  }
+  
+  .project {
+    align-items: center;
+    flex-direction: row;
+    margin-top: 3.2rem;
+
+    .description {
+      a {
+        padding-bottom: 1.2rem;
+      }
+    }
+
+    .links {
+      margin-top: 0;
+      margin-left: 4rem;
+      text-align: right;
+
+      a {
+        margin-left: 1.2rem;
+      }
+    }
   }
 }
 

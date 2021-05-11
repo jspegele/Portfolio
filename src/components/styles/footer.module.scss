@@ -9,14 +9,14 @@
   margin-top: 8rem;
 
   a {
-    color: $light-font;
+    color: $font-light;
     font-size: 1.6rem;
     font-weight: 500;
     text-decoration: none;
     transition: color .2s;
 
     &:hover {
-      color: $link-hover;
+      color: $link-dark;
     }
   }
 }

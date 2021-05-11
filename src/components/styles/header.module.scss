@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
 
 .header-wrapper {
-  background-color: $surface02;
+  background-color: $surface01;
   box-shadow: 0 2px 8px 1px rgba(0,0,0,.2);
   display: block;
   position: fixed;
@@ -21,7 +21,7 @@
 
 .title {
   align-items: center;
-  color: $on-primary;
+  color: $font-light;
   display: flex;
   font-family: 'PT Sans', 'Raleway', Helvetica, sans-serif;
   font-size: 2.4rem;
@@ -37,7 +37,7 @@
   }
 
   &:hover {
-    color: darken($on-primary, 12%);
+    color: darken($font-light, 12%);
   }
 }
 
@@ -46,20 +46,20 @@
 }
 
 .nav-item {
-  color: $on-primary;
+  color: $font-light;
   font-size: 1.4rem;
   margin-left: .4rem;
   padding: .4rem 1rem;
 
   &:hover {
     background-color: $primary;
-    color: $on-primary;
+    color: $font-light;
   }
 }
 
 .active-nav-item {
   background-color: $primary;
-  color: $on-primary;
+  color: $font-light;
 }
 
 @media (min-width: 451px) {

@@ -1,30 +1,16 @@
 // Light Theme
-$main-font: #393a42;
-$dark-font: #121212;
-$light-font: #d4d4d4;
+$font-dark: #121212;
+$font-light: #fff;
 
-$primary500: #6734df;
-$primary700: #4b27d0;
-$primary800: #3820ca;
-$primary: $primary500;
-$on-primary: #fff;
+$primary: #6734df;
+$primary-light: #bb86fc;
 
-$secondary50: #E1F5FE;
-$secondary100: #B3E5FC;
-$secondary200: #80cdec;
-$secondary300: #53bae3;
-$secondary400: #34acdf;
-$secondary600: #1690cc;
-$secondary: $secondary400;
-$on-secondary: $main-font;
+$secondary: #34acdf;
+$secondary-light: #03dac5;
 
-$accent300: #c960e5;
-$accent400: #bd34df;
-$accent500: #b000d8;
-$accent: $accent400;
-$on-accent: $main-font;
+$link-light: #244ea6;
 
-$link: #899BEB;
+$link-dark: #899BEB;
 $link-hover: #5973E3;
 
 $surface: #121212;
@@ -37,7 +23,3 @@ $surface08:	#2f2f2f;
 $surface12:	#333333;
 $surface16:	#353535;
 $surface24:	#3a3a3a;
-
-$on-surface: #ffffff;
-
-$accent600: #244ea6;

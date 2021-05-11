@@ -14,10 +14,10 @@ const Hero = () => (
         <div className={heroStyles.spacer}></div>
         <div className={heroStyles.heroBody}>
           <h1 className={heroStyles.title}>Hi, I'm Justin Spegele</h1>
-          <h2 className={heroStyles.subtitle}>I'm a full-stack web developer, UX researcher, and digital PM</h2>
+          <h2 className={heroStyles.subtitle}>I create unique experienes for online businesses.</h2>
           <div className={heroStyles.cta}>
             <a className={buttonStyles.buttonHero} href="#about">
-              See how I can help you <FaArrowRight size="1.6rem" />
+              Let's build something together <FaArrowRight size="1.6rem" />
             </a>
           </div>
         </div>

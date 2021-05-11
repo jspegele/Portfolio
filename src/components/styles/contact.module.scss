@@ -22,11 +22,12 @@
   }
 
   a {
-    color: $link;
+    color: $link-dark;
     text-decoration: none;
+    transition: color .2s;
 
     &:hover {
-      color: $link-hover;
+      color: darken($link-dark, 6%);
     }
   }
 }
@@ -41,7 +42,7 @@
   }
 
   .hr {
-    background-color: $on-surface;
+    background-color: $font-light;
     height: .2rem;
     margin: 2rem auto 0;
     width: 6rem;

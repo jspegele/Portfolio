@@ -26,11 +26,11 @@ const Header = () => {
               About
             </Link>
             <Link
-              to="/#projects"
+              to="/#work"
               className={`${buttonStyles.button} ${headerStyles.navItem}`}
               activeClassName={headerStyles.activeNavItem}
             >
-              Projects
+              Work
             </Link>
             <Link
               to="/#contact"
