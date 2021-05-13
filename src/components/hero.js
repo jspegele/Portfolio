@@ -5,7 +5,6 @@ import Container from './container'
 
 import heroStyles from './styles/hero.module.scss'
 import buttonStyles from './styles/buttons.module.scss'
-import heroBg from '../images/hero-bg.png'
 
 const Hero = () => (
   <div className={heroStyles.heroWrapper}>
@@ -14,15 +13,15 @@ const Hero = () => (
         <div className={heroStyles.spacer}></div>
         <div className={heroStyles.heroBody}>
           <h1 className={heroStyles.title}>Hi, I'm Justin Spegele</h1>
-          <h2 className={heroStyles.subtitle}>I create unique experienes for online businesses.</h2>
+          <h2 className={heroStyles.subtitle}>I create unique websites for online businesses. Let's build something together.</h2>
           <div className={heroStyles.cta}>
-            <a className={buttonStyles.buttonHero} href="#about">
-              Let's build something together <FaArrowRight size="1.6rem" />
+            <a className={buttonStyles.buttonHero} href="#contact">
+              Get a Free Proposal
+            </a>
+            <a className={buttonStyles.buttonHeroSecondary} href="#services">
+              View My Services
             </a>
           </div>
-        </div>
-        <div className={heroStyles.heroFooter}>
-          <img src={heroBg} alt="" width="600" height="185" />
         </div>
       </section>
     </Container>

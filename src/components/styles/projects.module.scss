@@ -2,7 +2,6 @@
 @import './buttons.module.scss';
 
 .projects-wrapper {
-  background-color: $surface02;
   color: $font-light;
   padding: 2rem 0 8rem;
   width: 100%;
@@ -201,7 +200,7 @@
   }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1201px) {
   .projects-wrapper {
     padding-top: 12rem
   }

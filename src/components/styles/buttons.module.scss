@@ -9,7 +9,7 @@
   outline: none;
   padding: 1rem 2rem;
   text-decoration: none;
-  transition: background-color .2s, color .2s;
+  transition: border-color .2s, color .2s, background-color .3s;
 
   svg {
     margin-right: .8rem;
@@ -64,27 +64,47 @@
 }
 
 .button-hero {
-  @extend .button;
+  @extend .button-primary;
   align-items: center;
-  background: none;
-  border: 2px solid $font-light;
-  color: $font-light;
   display: flex;
-  font-size: 2rem;
-  transition: border-color .2s, color .2s, background-color .3s;
+  justify-content: center;
+  margin-bottom: 2rem;
+  width: 100%;
 
   svg {
     margin-left: 1.2rem;
     transition: transform .3s;
   }
 
-  &:hover {
-    background-color: $primary;
-    border-color: $primary;
-    color: $font-light;
-    
+  &:hover {    
     svg {
       transform: rotate(90deg);
     }
+  }
+}
+
+.button-hero-secondary {
+  @extend .button-hero;
+  background: none;
+  border: 1px solid $primary;
+
+  &:hover {   
+    color: darken($font-light, 32%); 
+    background: none;
+    border-color: darken($primary, 6%);
+  }
+}
+
+@media (min-width: 451px) {
+  .button-hero {
+    margin: 0 1rem;
+    width: auto;
+  }
+}
+
+@media (min-width: 769px) {
+  .button-hero {
+    font-size: 2rem;
+    margin: 0 2rem;
   }
 }

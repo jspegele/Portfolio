@@ -6,10 +6,10 @@
 }
 
 .hero {
+  align-items: center;
   display: flex;
-  flex-direction: column;
   height: 75vh;
-  justify-content: space-between;
+  justify-content: center;
   padding: 12rem 0 0;
 }
 
@@ -22,7 +22,7 @@
   color: $font-light;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  padding-bottom: 20vh;
 }
 
 .hero-footer {
@@ -65,7 +65,10 @@
 }
 
 .cta {
+  display: flex;
+  flex-direction: column;
   margin-top: 4rem;
+  width: 100%;
 }
 
 @media (min-width: 451px) {
@@ -91,6 +94,9 @@
   }
 
   .cta {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     margin-top: 6rem;
   }
 }
@@ -123,7 +129,7 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1201px) {
   .hero-wrapper {
     background-image: url('../../images/hero-widescreen.jpg');
   }

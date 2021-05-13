@@ -19,11 +19,11 @@ const Header = () => {
           </Link>
           <nav className={headerStyles.nav}>
             <Link
-              to="/#about"
+              to="/#services"
               className={`${buttonStyles.button} ${headerStyles.navItem}`}
               activeClassName={headerStyles.activeNavItem}
             >
-              About
+              Services
             </Link>
             <Link
               to="/#work"
@@ -33,19 +33,19 @@ const Header = () => {
               Work
             </Link>
             <Link
+              to="/#about"
+              className={`${buttonStyles.button} ${headerStyles.navItem}`}
+              activeClassName={headerStyles.activeNavItem}
+            >
+              About
+            </Link>
+            <Link
               to="/#contact"
               className={`${buttonStyles.button} ${headerStyles.navItem}`}
               activeClassName={headerStyles.activeNavItem}
             >
               Contact
             </Link>
-            {/* <Link
-              to="/guides"
-              className={`${buttonStyles.button} ${headerStyles.navItem}`}
-              activeClassName={headerStyles.activeNavItem}
-            >
-              Guides
-            </Link> */}
           </nav>
         </header>
       </Container>

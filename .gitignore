@@ -60,6 +60,7 @@ public
 
 # Mac files
 .DS_Store
+startup.md
 
 # Yarn
 yarn-error.log
