@@ -13,7 +13,7 @@ const ContactForm = () => {
       className={styles.form}
     >
       <input type="hidden" name="bot-field" />
-      <input type="hidden" name="form-name" value="Parasky Flute Studios Contact" />
+      <input type="hidden" name="form-name" value="Web Contact Form" />
       <div className={styles.field}>
         <label className={styles.label}>Name</label>
         <div className={`${styles.control} ${styles.hasIconsLeft}`}>
