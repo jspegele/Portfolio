@@ -52,11 +52,11 @@ const ContactForm = () => {
         <label className={styles.label}>Preferred contact method</label>
         <div className={styles.control}>
           <label className={styles.radio}>
-            <input type="radio" name="Preferred Contact Method" checked />
+            <input type="radio" name="Preferred Contact Method" value="Email" checked />
             Email
           </label>
           <label className={styles.radio}>
-            <input type="radio" name="Preferred Contact Method" />
+            <input type="radio" name="Preferred Contact Method" value="Phone" />
             Phone
           </label>
         </div>
