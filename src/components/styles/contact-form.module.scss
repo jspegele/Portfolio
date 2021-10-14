@@ -1,0 +1,124 @@
+@import '../../styles/colors.scss';
+@import './buttons.module.scss';
+
+.form {
+  background-color: $surface02;
+  border-radius: 1rem;
+  margin: 2rem -1rem 0;
+  padding: 3rem 1rem;
+}
+
+.field:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.label:not(:last-child) {
+  margin-bottom: .6rem;
+}
+
+.label {
+  color: $font-light-secondary;
+  display: block;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.control {
+  box-sizing: border-box;
+  clear: both;
+  font-size: 1.6rem;
+  position: relative;
+  text-align: inherit;
+}
+
+.input, .select select, .textarea {
+  align-items: center;
+  background-color: $surface04;
+  border: 1px solid $surface06;
+  border-radius: .6rem;
+  box-shadow: none;
+  color: $font-light;
+  display: inline-flex;
+  font-family: 'Raleway', Helvetica, sans-serif;
+  font-size: 1.4rem;
+  height: 4rem;
+  justify-content: flex-start;
+  line-height: 1.5;
+  padding-bottom: calc(.8rem - 1px);
+  padding-left: calc(1.2rem - 1px);
+  padding-right: calc(1.2rem - 1px);
+  padding-top: calc(.8rem - 1px);
+  position: relative;
+  vertical-align: top;
+}
+
+.input, .textarea {
+  box-shadow: inset 0 .0625em .125em rgba(10,10,10,.05);
+  max-width: 100%;
+  width: 100%;
+}
+
+.select:not(.is-multiple) {
+  height: 4rem;
+}
+
+.select {
+  display: inline-block;
+  max-width: 100%;
+  position: relative;
+  vertical-align: top;
+}
+
+.select select {
+  font-size: 1.2rem;
+}
+
+.textarea:not([rows]) {
+  max-height: 64rem;
+  min-height: 12.8rem;
+}
+
+.textarea {
+  display: block;
+  max-width: 100%;
+  min-width: 100%;
+  padding: calc(1.2rem - 1px);
+  resize: vertical;
+}
+
+.checkbox, .radio {
+  cursor: pointer;
+  display: inline-block;
+  line-height: 1.25;
+  position: relative;
+}
+
+.checkbox input, .radio input {
+  margin-right: .4rem;
+}
+
+.radio + .radio {
+  margin-left: 2rem;
+}
+
+@media (min-width: 451px) {
+  .form {
+    margin: 2rem auto 0;
+    max-width: 60rem;
+    padding: 4rem;
+  }
+
+  .label {
+    font-size: 1.4rem;
+  }
+
+  .input, .select select, .textarea {
+    font-size: 1.6rem;
+  }
+}
+
+@media (min-width: 769px) {
+  .form {
+    margin-top: 4rem;
+  }
+}

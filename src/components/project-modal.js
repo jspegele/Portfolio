@@ -25,8 +25,8 @@ const ProjectModal = ({ isActive, handleCloseModal, title, images, description, 
         <div className={styles.modalContentImage}>
           {images.length && (
             <Carousel showThumbs={false}>
-              {images.map(image => (
-                <div>
+              {images.map((image, i) => (
+                <div key={i}>
                   <img src={image.url} alt="Website screenshot" />
                 </div>
               ))}

@@ -5,7 +5,7 @@ import { useStaticQuery, graphql } from 'gatsby'
 
 import favicon from '../images/favicon.png'
 
-const Head = ({ description, lang, meta,title }) => {
+const Head = ({ description, lang, meta, title }) => {
   const { site } = useStaticQuery(graphql`
     query {
       site {
@@ -42,6 +42,7 @@ Head.defaultProps = {
   description: ``,
   lang: `en`,
   meta: [],
+  title: 'Justin Spegele | Web Developer, Researcher, PM'
 }
 
 Head.propTypes = {

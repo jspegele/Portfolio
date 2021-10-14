@@ -2,6 +2,7 @@ import React from 'react'
 import { FaEnvelope, FaPhone } from 'react-icons/fa'
 
 import Container from './container'
+import ContactForm from './contact-form'
 
 import contactStyles from './styles/contact.module.scss'
 
@@ -22,12 +23,9 @@ const Contact = () => {
               <FaEnvelope size="1.8rem" />
               <a href="mailto:hello@justinspegele.com?subject=Website Inquiry">hello@justinspegele.com</a>
             </li>
-            <li>
-              <FaPhone size="1.8rem" />
-              +1 631 521 1659
-            </li>
           </ul>
         </div>
+        <ContactForm />
       </Container>
     </div>
   )
