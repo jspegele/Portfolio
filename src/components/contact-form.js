@@ -1,4 +1,5 @@
 import React from 'react'
+import { FaUserAlt, FaEnvelope, FaPhone, FaStarOfLife } from 'react-icons/fa'
 
 import styles from './styles/contact-form.module.scss'
 
@@ -16,19 +17,25 @@ const ContactForm = () => {
       <input type="hidden" name="form-name" value="Justin Spegele Web Contact" />
       <div className={styles.field}>
         <label className={styles.label}>Name</label>
-        <div className={`${styles.control} ${styles.hasIconsLeft}`}>
-          <input className={styles.input} type="text" name="Name" />
-          <span className="icon is-small is-left">
-            <i className="fas fa-user"></i>
+        <div className={`${styles.control} ${styles.hasIconsLeft} ${styles.hasIconsRight}`}>
+          <input className={styles.input} type="text" name="Name" required />
+          <span className={`${styles.icon} ${styles.isLeft}`}>
+            <FaUserAlt />
+          </span>
+          <span className={`${styles.icon} ${styles.isRight} ${styles.isRequired}`}>
+            <FaStarOfLife />
           </span>
         </div>
       </div>
       <div className={styles.field}>
         <label className={styles.label}>Email</label>
-        <div className={`${styles.control} ${styles.hasIconsLeft}`}>
-          <input className={styles.input} type="email" name="Email" />
-          <span className="icon is-small is-left">
-            <i className="fas fa-envelope"></i>
+        <div className={`${styles.control} ${styles.hasIconsLeft} ${styles.hasIconsRight}`}>
+          <input className={styles.input} type="email" name="Email" required />
+          <span className={`${styles.icon} ${styles.isLeft}`}>
+            <FaEnvelope />
+          </span>
+          <span className={`${styles.icon} ${styles.isRight} ${styles.isRequired}`}>
+            <FaStarOfLife />
           </span>
         </div>
       </div>
@@ -36,8 +43,8 @@ const ContactForm = () => {
         <label className={styles.label}>Phone</label>
         <div className={`${styles.control} ${styles.hasIconsLeft}`}>
           <input className={styles.input} type="text" name="Phone" />
-          <span className="icon is-small is-left">
-            <i className="fas fa-user"></i>
+          <span className={`${styles.icon} ${styles.isLeft}`}>
+            <FaPhone />
           </span>
         </div>
       </div>
@@ -45,7 +52,7 @@ const ContactForm = () => {
         <label className={styles.label}>Preferred contact method</label>
         <div className={styles.control}>
           <label className={styles.radio}>
-            <input type="radio" name="Preferred Contact Method" />
+            <input type="radio" name="Preferred Contact Method" checked />
             Email
           </label>
           <label className={styles.radio}>
@@ -59,8 +66,8 @@ const ContactForm = () => {
         <div className={styles.control}>
           <div className={styles.select}>
             <select name="Project Type">
-              <option disabled></option>
-              <option>Update myexisting website</option>
+              <option disabled selected></option>
+              <option>Update my existing website</option>
               <option>Build a new website</option>
               <option>Build a new website w/eCommerce</option>
               <option>Develop a business app</option>

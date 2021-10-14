@@ -101,6 +101,45 @@
   margin-left: 2rem;
 }
 
+.control.has-icons-left .icon.is-left {
+  left: 0;
+}
+
+.control.has-icons-left .icon, .control.has-icons-right .icon {
+  color: $font-light-disabled;
+  height: 4rem;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  width: 4rem;
+  z-index: 4;
+}
+
+.control.has-icons-right .icon.is-right {
+  right: 0;
+}
+
+.control.has-icons-right .icon.is-right.is-required {
+  font-size: .8rem;
+  height: 2rem;
+  width: 2rem;
+}
+
+.control.has-icons-right .input, .control.has-icons-right .select select {
+  padding-right: 2.5em;
+}
+.control.has-icons-left .input, .control.has-icons-left .select select {
+  padding-left: 2.5em;
+}
+
+.icon {
+  align-items: center;
+  display: inline-flex;
+  justify-content: center;
+  height: 2.4rem;
+  width: 2.4rem;
+}
+
 @media (min-width: 451px) {
   .form {
     margin: 2rem auto 0;
