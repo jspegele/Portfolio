@@ -9,11 +9,11 @@ const ContactForm = () => {
       action="/success"
       netlify-honeypot="bot-field"
       data-netlify="true"
-      name="Web Contact Form"
+      name="Justin Spegele Web Contact"
       className={styles.form}
     >
       <input type="hidden" name="bot-field" />
-      <input type="hidden" name="form-name" value="Web Contact Form" />
+      <input type="hidden" name="form-name" value="Justin Spegele Web Contact" />
       <div className={styles.field}>
         <label className={styles.label}>Name</label>
         <div className={`${styles.control} ${styles.hasIconsLeft}`}>
