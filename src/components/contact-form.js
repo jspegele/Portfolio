@@ -16,9 +16,16 @@ const ContactForm = () => {
       <input type="hidden" name="bot-field" />
       <input type="hidden" name="form-name" value="Justin Spegele Web Contact" />
       <div className={styles.field}>
-        <label className={styles.label}>Name</label>
+        <label className={styles.label} htmlFor="Name">
+          Name
+        </label>
         <div className={`${styles.control} ${styles.hasIconsLeft} ${styles.hasIconsRight}`}>
-          <input className={styles.input} type="text" name="Name" required />
+          <input
+            className={styles.input}
+            type="text"
+            name="Name"
+            required
+          />
           <span className={`${styles.icon} ${styles.isLeft}`}>
             <FaUserAlt />
           </span>
@@ -28,9 +35,16 @@ const ContactForm = () => {
         </div>
       </div>
       <div className={styles.field}>
-        <label className={styles.label}>Email</label>
+        <label className={styles.label} htmlFor="Email">
+          Email
+        </label>
         <div className={`${styles.control} ${styles.hasIconsLeft} ${styles.hasIconsRight}`}>
-          <input className={styles.input} type="email" name="Email" required />
+          <input
+            className={styles.input}
+            type="email"
+            name="Email"
+            required
+          />
           <span className={`${styles.icon} ${styles.isLeft}`}>
             <FaEnvelope />
           </span>
@@ -40,33 +54,52 @@ const ContactForm = () => {
         </div>
       </div>
       <div className={styles.field}>
-        <label className={styles.label}>Phone</label>
+        <label className={styles.label} htmlFor="Phone">
+          Phone
+        </label>
         <div className={`${styles.control} ${styles.hasIconsLeft}`}>
-          <input className={styles.input} type="text" name="Phone" />
+          <input
+            className={styles.input}
+            type="text"
+            name="Phone"
+          />
           <span className={`${styles.icon} ${styles.isLeft}`}>
             <FaPhone />
           </span>
         </div>
       </div>
       <div className={styles.field}>
-        <label className={styles.label}>Preferred contact method</label>
+        <label className={styles.label} htmlFor="Preferred Contact Method">
+          Preferred contact method
+        </label>
         <div className={styles.control}>
           <label className={styles.radio}>
-            <input type="radio" name="Preferred Contact Method" value="Email" checked />
+            <input
+              type="radio"
+              name="Preferred Contact Method"
+              value="Email"
+              checked
+            />
             Email
           </label>
           <label className={styles.radio}>
-            <input type="radio" name="Preferred Contact Method" value="Phone" />
+            <input
+              type="radio"
+              name="Preferred Contact Method"
+              value="Phone"
+            />
             Phone
           </label>
         </div>
       </div>
       <div className={styles.field}>
-        <label className={styles.label}>What can I help you with?</label>
+        <label className={styles.label} htmlFor="Project Type">
+          What can I help you with?
+        </label>
         <div className={styles.control}>
           <div className={styles.select}>
             <select name="Project Type">
-              <option disabled selected></option>
+              <option disabled selected> -- select an option -- </option>
               <option>Update my existing website</option>
               <option>Build a new website</option>
               <option>Build a new website w/eCommerce</option>
@@ -76,7 +109,9 @@ const ContactForm = () => {
         </div>
       </div>
       <div className={styles.field}>
-        <label className={styles.label}>Tell me a bit about your project</label>
+        <label className={styles.label} htmlFor="Project Details">
+          Tell me a bit about your project
+        </label>
         <div className={styles.control}>
           <textarea className={styles.textarea} name="Project Details"></textarea>
         </div>

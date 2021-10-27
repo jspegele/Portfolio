@@ -9,12 +9,16 @@ const Layout = props => {
   return (
     <div className={layoutStyles.wrapper}>
       <div className={layoutStyles.content}>
-        <Header />
+        <Header type={props.type} />
         {props.children}
       </div>
-      <Footer />
+      <Footer type={props.type} />
     </div>
   )
+}
+
+Layout.defaultProps = {
+  type: 'full'
 }
 
 export default Layout

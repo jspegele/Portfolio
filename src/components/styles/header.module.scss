@@ -47,9 +47,9 @@
 
 .nav-item {
   color: $font-light;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   margin-left: .4rem;
-  padding: .4rem 1rem;
+  padding: .4rem .6rem;
 
   &:hover {
     background-color: $primary;
@@ -60,6 +60,11 @@
 .active-nav-item {
   background-color: $primary;
   color: $font-light;
+}
+
+.icon {
+  font-size: 2.4rem;
+  margin-left: 1rem;
 }
 
 @media (min-width: 451px) {

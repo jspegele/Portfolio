@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaEnvelope, FaPhone } from 'react-icons/fa'
+import { FaEnvelope } from 'react-icons/fa'
 
 import Container from './container'
 import ContactForm from './contact-form'
