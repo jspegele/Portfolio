@@ -11,7 +11,7 @@ const Hero = () => (
       <section className={heroStyles.hero} id="top">
         <div className={heroStyles.spacer}></div>
         <div className={heroStyles.heroBody}>
-          <h1 className={heroStyles.title}>Hi, I'm Justin Spegele</h1>
+          <h1 className={heroStyles.title}>Hi, I'm Justin Spegele.</h1>
           <h2 className={heroStyles.subtitle}>I create unique websites for online businesses. Let's build something together.</h2>
           <div className={heroStyles.cta}>
             <a className={buttonStyles.buttonHero} href="#contact">
