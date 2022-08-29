@@ -6,13 +6,16 @@
   
   --primary: #6734df;
   --primary-light: #bb86fc;
+  --primary-xlight: #e4cffe;
+  --primary-dark: #5c26dd;
   
   --secondary: #34acdf;
   --secondary-light: #03dac5;
+  --secondary-xlight: #3dfcea;
   --secondary-dark: #0E5E81;
   
-  --link-light: #244ea6;
-  
+  --link: #244ea6;
+  --link-light: #2755b5;
   --link-dark: #899BEB;
   --link-hover: #5973E3;
   

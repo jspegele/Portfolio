@@ -28,7 +28,7 @@
 }
 
 .title :hover {
-  color: darken(var(--font-light), 12%);
+  color: var(--font-light-secondary);
 }
 
 .title img {

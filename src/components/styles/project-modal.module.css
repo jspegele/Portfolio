@@ -95,12 +95,12 @@
 }
 
 .modal-content .modal-content-foot a {
-  color: var(--link-light);
+  color: var(--link);
   text-decoration: none;
 }
 
 .modal-content .modal-content-foot a:hover {
-  color: darken(var(--link-light), 6%);
+  color: var(--link-dark);
 }
 
 .modal-content .modal-content-foot a svg {

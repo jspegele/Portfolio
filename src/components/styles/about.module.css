@@ -113,7 +113,7 @@
 }
 
 .skills ul li .fill {
-  background-color: lighten(var(--secondary-light), 32%);
+  background-color: var(--secondary-xlight);
   border-radius: .4rem;
   transition: width .3s ease-in;
 }

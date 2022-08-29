@@ -117,7 +117,7 @@
   }
 
   .service.web-updates {
-    background: linear-gradient(90deg, transparent 50%, var(--link-light) 50%);
+    background: linear-gradient(90deg, transparent 50%, var(--link) 50%);
   }
 
   .tags {

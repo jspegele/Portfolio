@@ -52,7 +52,7 @@ a {
 }
 
 a:hover {
-  color: darken(var(--link-dark), 6%);
+  color: var(--link);
 }
 
 /* Carousel Custom Styles */
