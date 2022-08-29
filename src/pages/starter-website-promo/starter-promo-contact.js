@@ -1,6 +1,6 @@
 import React from 'react'
 
-import styles from './styles/starter-promo-contact.module.scss'
+import styles from './styles/starter-promo-contact.module.css'
 
 import Container from '../../components/container'
 import StarterPromoForm from './starter-promo-form'

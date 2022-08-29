@@ -1,7 +1,7 @@
 import React from 'react'
 import { FaUserAlt, FaEnvelope, FaPhone, FaStarOfLife } from 'react-icons/fa'
 
-import styles from './styles/contact-form.module.scss'
+import styles from './styles/contact-form.module.css'
 
 const ContactForm = () => {
   return (

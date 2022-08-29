@@ -27,8 +27,8 @@ import chenelScreen4 from "../images/chenel-capital-screen4.jpg"
 import chenelScreen5 from "../images/chenel-capital-screen5.jpg"
 import crwnClothingThumb from "../images/crwn-clothing-sm.jpg"
 import crwnClothingLarge from "../images/crwn-clothing-lg.jpg"
-import styles from "./styles/projects.module.scss"
-import buttonStyles from "./styles/buttons.module.scss"
+import styles from "./styles/projects.module.css"
+import buttonStyles from "./styles/buttons.module.css"
 
 const Projects = () => {
   const [modal1Open, setModal1Open] = useState(false)

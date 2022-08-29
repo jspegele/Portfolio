@@ -1,6 +1,6 @@
 import React from 'react'
 
-import styles from './styles/starter-promo-pitch.module.scss'
+import styles from './styles/starter-promo-pitch.module.css'
 
 import Container from '../../components/container'
 

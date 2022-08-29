@@ -11,7 +11,7 @@ import {
   FaChartLine,
 } from "react-icons/fa"
 
-import styles from "./styles/services.module.scss"
+import styles from "./styles/services.module.css"
 import imgFrontEndDev from "../images/svc-front-end-development.jpg"
 import imgAppDev from "../images/svc-app-development.jpg"
 import imgWebUpdates from "../images/svc-website-updates.jpg"

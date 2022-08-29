@@ -1,7 +1,7 @@
 import React from 'react'
 import { FaUserAlt, FaEnvelope } from 'react-icons/fa'
 
-import styles from './styles/starter-promo-form.module.scss'
+import styles from './styles/starter-promo-form.module.css'
 
 const StarterPromoForm = () => {
   return (

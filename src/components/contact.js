@@ -4,7 +4,7 @@ import { FaEnvelope } from 'react-icons/fa'
 import Container from './container'
 import ContactForm from './contact-form'
 
-import contactStyles from './styles/contact.module.scss'
+import contactStyles from './styles/contact.module.css'
 
 const Contact = () => {
   return (

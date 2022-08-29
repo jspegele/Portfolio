@@ -1,22 +1,20 @@
-@import '../../../styles/colors.scss';
-
 .contact {
   background: rgb(52,172,223);
   background: linear-gradient(45deg, rgba(52,172,223,1) 0%, rgba(52,172,223,0.65) 47%, rgba(3,218,197,1) 100%);
-  color: $font-light;
+  color: var(--font-light);
   margin-top: 4rem;
   padding: 4rem 0;
+}
 
-  h4 {
-    font-size: 2rem;
-    font-weight: 500;
-    padding-bottom: 1rem;
-  }
+.contact h4 {
+  font-size: 2rem;
+  font-weight: 500;
+  padding-bottom: 1rem;
+}
 
-  ul {
-    list-style-type: disc;
-    margin-left: 3rem;
-  }
+.contact ul {
+  list-style-type: disc;
+  margin-left: 3rem;
 }
 
 .title, .subtitle {
@@ -31,11 +29,11 @@
 .subtitle {
   font-size: 2rem;
   margin: 2rem 0;
+}
 
-  .mail-icon {
-    font-size: 3.6rem;
-    margin-left: 1rem;
-  }
+.subtitle .mail-icon {
+  font-size: 3.6rem;
+  margin-left: 1rem;
 }
 
 @media screen and (min-width: 769px) {

@@ -3,7 +3,7 @@ import { FaEnvelope, FaFileAlt, FaLinkedin, FaGithub } from 'react-icons/fa'
 
 import Container from './container'
 
-import footerStyles from './styles/footer.module.scss'
+import footerStyles from './styles/footer.module.css'
 import resume from '../files/JustinSpegeleResume.pdf'
 
 import imgLogo from '../images/js-logo.png'

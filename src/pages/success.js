@@ -6,7 +6,7 @@ import Layout from "../components/layout"
 import Container from "../components/container"
 import Head from "../components/head"
 
-import styles from './styles/success.module.scss'
+import styles from './styles/success.module.css'
 
 const SuccessPage = () => (
   <Layout>

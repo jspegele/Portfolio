@@ -1,24 +1,22 @@
-@import '../../styles/colors.scss';
-
 .footer {
   align-items: center;
-  border-top: 1px solid $primary;
+  border-top: 1px solid var(--primary);
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   margin-top: 8rem;
+}
 
-  a {
-    color: $font-light;
-    font-size: 1.6rem;
-    font-weight: 500;
-    text-decoration: none;
-    transition: color .2s;
+.footer a {
+  color: var(--font-light);
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color .2s;
+}
 
-    &:hover {
-      color: $link-dark;
-    }
-  }
+.footer a:hover {
+  color: var(--link-dark);
 }
 
 .links {
@@ -27,16 +25,16 @@
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 4rem;
+}
 
-  a {
-    align-items: center;
-    display: flex;
-    padding: 1.2rem;
+.links a {
+  align-items: center;
+  display: flex;
+  padding: 1.2rem;
+}
 
-    svg {
-      margin-right: 1.2rem;
-    }
-  }
+.links a svg {
+  margin-right: 1.2rem;
 }
 
 .logo {
@@ -53,10 +51,10 @@
 @media (min-width: 769px) {
   .links {
     margin-top: 6rem;
+  }
   
-    a {
-      padding: 1.2rem 3.2rem;
-    }
+  .links a {
+    padding: 1.2rem 3.2rem;
   }
   
   .copyright {

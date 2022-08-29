@@ -1,6 +1,6 @@
 import React from 'react'
 
-import styles from './styles/starter-promo-banner.module.scss'
+import styles from './styles/starter-promo-banner.module.css'
 
 import Container from '../../components/container'
 

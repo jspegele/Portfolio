@@ -3,7 +3,7 @@ import { FaExternalLinkAlt } from "react-icons/fa"
 import "react-responsive-carousel/lib/styles/carousel.min.css"
 import { Carousel } from 'react-responsive-carousel'
 
-import styles from './styles/project-modal.module.scss'
+import styles from './styles/project-modal.module.css'
 
 const ProjectModal = ({ isActive, handleCloseModal, title, images, description, link }) => {
   const handleKeyDown = ev => {

@@ -2,8 +2,8 @@ import React from 'react'
 
 import Container from './container'
 
-import heroStyles from './styles/hero.module.scss'
-import buttonStyles from './styles/buttons.module.scss'
+import heroStyles from './styles/hero.module.css'
+import buttonStyles from './styles/buttons.module.css'
 
 const Hero = () => (
   <div className={heroStyles.heroWrapper}>

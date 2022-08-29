@@ -3,7 +3,7 @@ import { MdDevices, MdFlightTakeoff, MdLightbulbOutline, MdShowChart } from 'rea
 
 import Container from './container'
 
-import aboutStyles from './styles/about.module.scss'
+import aboutStyles from './styles/about.module.css'
 import avatar from '../images/avatar.png'
 
 const About = () => (

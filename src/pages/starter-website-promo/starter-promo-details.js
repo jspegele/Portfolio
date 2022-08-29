@@ -1,7 +1,7 @@
 import React from 'react'
 import { FaCheckCircle, FaGoogle, FaExpandArrowsAlt, FaMailBulk } from 'react-icons/fa'
 
-import styles from './styles/starter-promo-details.module.scss'
+import styles from './styles/starter-promo-details.module.css'
 
 import Container from '../../components/container'
 

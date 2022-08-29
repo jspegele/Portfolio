@@ -2,8 +2,8 @@ import React from 'react'
 import { RiMailSendFill } from 'react-icons/ri'
 import { Link } from 'gatsby'
 
-import buttonStyles from './styles/buttons.module.scss'
-import headerStyles from './styles/header.module.scss'
+import buttonStyles from './styles/buttons.module.css'
+import headerStyles from './styles/header.module.css'
 
 import imgLogo from '../images/js-logo.png'
 

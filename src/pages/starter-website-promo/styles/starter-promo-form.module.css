@@ -1,17 +1,16 @@
-@import '../../../styles/colors.scss';
-@import '../../../components/styles/buttons.module.scss';
+@import '../../../components/styles/buttons.module.css';
 
 .form {
-  background-color: $surface04;
+  background-color: var(--surface04);
   border-radius: 1rem;
-  color: $font-light;
+  color: var(--font-light);
   margin: 2rem -1rem 0;
   padding: 2rem;
+}
 
-  h2 {
-    font-size: 2.4rem;
-    padding-bottom: 2rem;
-  }
+.form h2 {
+  font-size: 2.4rem;
+  padding-bottom: 2rem;
 }
 
 .field:not(:last-child) {
@@ -23,7 +22,7 @@
 }
 
 .label {
-  color: $font-light;
+  color: var(--font-light);
   display: block;
   font-size: 1.4rem;
   font-weight: 400;
@@ -39,11 +38,11 @@
 
 .input, .select select, .textarea {
   align-items: center;
-  background-color: $surface06;
-  border: 1px solid $surface08;
+  background-color: var(--surface06);
+  border: 1px solid var(--surface08);
   border-radius: .6rem;
   box-shadow: none;
-  color: $font-light;
+  color: var(--font-light);
   display: inline-flex;
   font-family: 'Raleway', Helvetica, sans-serif;
   font-size: 1.4rem;
@@ -97,7 +96,7 @@
 }
 
 .control.has-icons-left .icon {
-  color: $font-light-disabled;
+  color: var(--font-light-disabled);
   height: 4rem;
   pointer-events: none;
   position: absolute;
@@ -137,9 +136,9 @@
   .form {
     margin-top: 0;
     padding: 3rem 4rem;
+  }
 
-    h2 {
-      font-size: 3.2rem;
-    }
+  .form h2 {
+    font-size: 3.2rem;
   }
 }

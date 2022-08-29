@@ -1,0 +1,205 @@
+.about-wrapper {
+  background-color: var(--primary);
+  color: var(--font-light);
+  width: 100%;
+}
+
+.about {
+  display: grid;
+  grid-gap: 6rem 3rem;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "header"
+    "services"
+    "profile"
+    "skills";
+  padding: 8rem 0;
+}
+
+.about h3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-top: 1.2rem;
+}
+
+.about p {
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  margin-top: 1.2rem;
+  text-align: center;
+}
+
+.attribution {
+  display: none;
+}
+
+.header {
+  grid-area: header;
+  text-align: center;
+}
+
+.header h2 {
+  font-size: 3.2rem;
+}
+
+.header .hr {
+  background-color: var(--font-light);
+  height: .2rem;
+  margin: 2rem auto 0;
+  width: 6rem;
+}
+
+.services {
+  grid-area: services;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.service {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-bottom: 4rem;
+  width: 48%;
+}
+
+.service .icon {
+  align-items: center;
+  background-color: var(--font-light);
+  border-radius: 50%;
+  color: var(--primary);
+  display: flex;
+  height: 8rem;
+  justify-content: center;
+  width: 8rem;
+}
+
+.service .icon svg {
+  width: 2.4rem;
+}
+
+.profile {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.profile .avatar {
+  max-width: 18rem;
+  width: 100%;
+}
+
+.skills ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 40rem;
+}
+
+.skills ul li {
+  background-color: var(--font-light);
+  border-radius: .4rem;
+  color: var(--font-dark);
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin: 0 .6rem .6rem 0;
+  width: 100%;
+}
+
+.skills ul li .fill {
+  background-color: lighten(var(--secondary-light), 32%);
+  border-radius: .4rem;
+  transition: width .3s ease-in;
+}
+  
+.skills ul li span {
+  display: inline-block;
+  padding: .8rem 1.2rem;
+  white-space: nowrap;
+  width: 17rem;
+}
+
+.skills ul li .fill10 { width: 10%; }
+.skills ul li .fill20 { width: 20%; }
+.skills ul li .fill30 { width: 30%; }
+.skills ul li .fill40 { width: 40%; }
+.skills ul li .fill50 { width: 50%; }
+.skills ul li .fill60 { width: 60%; }
+.skills ul li .fill70 { width: 70%; }
+.skills ul li .fill80 { width: 80%; }
+.skills ul li .fill90 { width: 90%; }
+.skills ul li .fill95 { width: 95%; }
+.skills ul li .fill100 { width: 100%; }
+
+.title {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.info {
+  margin-top: 1.6rem;
+}
+
+@media (min-width: 451px) {
+  .service .icon {
+    height: 10rem;
+    width: 10rem;
+  }
+
+  .service .icon svg {
+    width: 3.6rem;
+  }
+
+  .profile .avatar {
+    max-width: 25rem;
+  }
+}
+
+@media (min-width: 769px) {
+  .about {
+    grid-gap: 8rem 4rem;
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "header header"
+      "services services"
+      "profile skills";
+  }
+
+  .about h3 {
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin-top: 1.2rem;
+  }
+
+  .header h2 {
+    font-size: 4.8rem;
+  }
+
+  .service {
+    margin-bottom: 0;
+    width: 22.5%;
+  }
+
+  .skills ul li .fill {
+    width: 0;
+  }
+
+  .skills ul li:hover .fill10 { width: 10%; }
+  .skills ul li:hover .fill20 { width: 20%; }
+  .skills ul li:hover .fill30 { width: 30%; }
+  .skills ul li:hover .fill40 { width: 40%; }
+  .skills ul li:hover .fill50 { width: 50%; }
+  .skills ul li:hover .fill60 { width: 60%; }
+  .skills ul li:hover .fill70 { width: 70%; }
+  .skills ul li:hover .fill80 { width: 80%; }
+  .skills ul li:hover .fill90 { width: 90%; }
+  .skills ul li:hover .fill95 { width: 95%; }
+  .skills ul li:hover .fill100 { width: 100%; }
+}

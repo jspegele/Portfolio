@@ -1,8 +1,7 @@
-@import '../../styles/colors.scss';
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
 
 .header-wrapper {
-  background-color: $surface01;
+  background-color: var(--surface01);
   box-shadow: 0 2px 8px 1px rgba(0,0,0,.2);
   display: block;
   position: fixed;
@@ -21,24 +20,24 @@
 
 .title {
   align-items: center;
-  color: $font-light;
+  color: var(--font-light);
   display: flex;
   font-family: 'PT Sans', 'Raleway', Helvetica, sans-serif;
   font-size: 2.4rem;
   text-decoration: none;
+}
 
-  img {
-    margin-right: 1.6rem;
-    width: 50px;
-  }
-  
-  span {
-    display: none;
-  }
+.title :hover {
+  color: darken(var(--font-light), 12%);
+}
 
-  &:hover {
-    color: darken($font-light, 12%);
-  }
+.title img {
+  margin-right: 1.6rem;
+  width: 50px;
+}
+
+.title span {
+  display: none;
 }
 
 .nav {
@@ -46,20 +45,20 @@
 }
 
 .nav-item {
-  color: $font-light;
+  color: var(--font-light);
   font-size: 1.3rem;
   margin-left: .4rem;
   padding: .4rem .6rem;
+}
 
-  &:hover {
-    background-color: $primary;
-    color: $font-light;
-  }
+.nav-item:hover {
+  background-color: var(--primary);
+  color: var(--font-light);
 }
 
 .active-nav-item {
-  background-color: $primary;
-  color: $font-light;
+  background-color: var(--primary);
+  color: var(--font-light);
 }
 
 .icon {
@@ -80,10 +79,8 @@
 }
 
 @media (min-width: 769px) {
-  .title {
-    span {
-      display: inline;
-    }
+  .title span {
+    display: inline;
   }
 
   .nav-item {

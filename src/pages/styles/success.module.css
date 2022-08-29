@@ -1,0 +1,24 @@
+@import '../../components/styles/buttons.module.css';
+
+.success {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 30rem;
+  padding: 12rem 0 0;
+  text-align: center;
+}
+
+.success p {
+  margin-top: 2rem;
+}
+
+.button {
+  align-self: center;
+  background-color: var(--primary);
+  margin-top: 2rem;
+}
+
+.button svg {
+  margin-left: 1rem;
+}

@@ -3,7 +3,7 @@ import React from 'react'
 import Container from '../../components/container'
 import StarterPromoForm from './starter-promo-form'
 
-import styles from './styles/starter-promo-hero.module.scss'
+import styles from './styles/starter-promo-hero.module.css'
 
 const StarterPromoHero = () => {
   return (

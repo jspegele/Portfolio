@@ -1,20 +1,18 @@
-@import '../../../styles/colors.scss';
-
 .banner {
-  background-color: $primary;
+  background-color: var(--primary);
   margin-top: 4rem;
   padding: 4rem 0;
+}
 
-  h4 {
-    font-size: 2rem;
-    font-weight: 500;
-    padding-bottom: 1rem;
-  }
+.banner h4 {
+  font-size: 2rem;
+  font-weight: 500;
+  padding-bottom: 1rem;
+}
 
-  ul {
-    list-style-type: disc;
-    margin-left: 3rem;
-  }
+.banner ul {
+  list-style-type: disc;
+  margin-left: 3rem;
 }
 
 .title, .subtitle {

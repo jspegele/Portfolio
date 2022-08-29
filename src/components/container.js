@@ -1,6 +1,6 @@
 import React from 'react'
 
-import layoutStyles from './styles/container.module.scss'
+import layoutStyles from './styles/container.module.css'
 
 const Layout = props => {
   return (
