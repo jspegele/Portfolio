@@ -172,7 +172,7 @@ const PortfolioFull = () => {
                     intuitive UI.
                   </p>
                   <p>
-                    This app is built with React 17, NodeJS, Firebase, and
+                    This app is built with React 17, NodeJS, Firebase API, and
                     MaterialUI.
                   </p>
                 </>
@@ -240,8 +240,8 @@ const PortfolioFull = () => {
                     existing programs.
                   </p>
                   <p>
-                    This app is built with React 17, NodeJS, Firebase, and
-                    MaterialUI.
+                    This app is built with React 17, NodeJS, Firebase API, Vimeo
+                    API, and MaterialUI.
                   </p>
                 </>
               }
