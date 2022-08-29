@@ -28,6 +28,7 @@ const ProjectModal = ({ isActive, handleCloseModal, title, images, description, 
               {images.map((image, i) => (
                 <div key={i}>
                   <img src={image.url} alt="Website screenshot" />
+                  {image.legend && <p className="legend">{image.legend}</p>}
                 </div>
               ))}
             </Carousel>
@@ -35,13 +36,15 @@ const ProjectModal = ({ isActive, handleCloseModal, title, images, description, 
         </div>
         <footer className={styles.modalContentFoot}>
           {description}
-          <a
-            href={link}
-            target="_blank"
-            rel="noreferrer"
-          >
-            Visit {title} <FaExternalLinkAlt />
-          </a>
+          {link && (
+            <a
+              href={link}
+              target="_blank"
+              rel="noreferrer"
+            >
+              Visit {title} <FaExternalLinkAlt />
+            </a>
+          )}
         </footer>
       </div>
     </div>

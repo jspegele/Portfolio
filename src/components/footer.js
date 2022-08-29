@@ -19,6 +19,14 @@ const Footer = ({ type }) => {
               <FaEnvelope size="1.8rem" />
               Say Hello
             </a>
+          </div>
+        )}
+        {type === 'portfolio' && (
+          <div className={footerStyles.links}>
+            <a href="mailto:justin@justinspegele.com?subject=Hello Justin">
+              <FaEnvelope size="1.8rem" />
+              Contact Me
+            </a>
             <a href="https://www.linkedin.com/in/justinspegele/" target="_blank" rel="noreferrer">
               <FaLinkedin size="1.8rem" />
               LinkedIn
@@ -33,12 +41,8 @@ const Footer = ({ type }) => {
             </a>
             <a href={enterprise} target="_blank" rel="noreferrer">
               <FaFileAlt size="1.8rem" />
-              Enterprise
+              Enterprise Projects
             </a>
-            {/* <a href="https://codepen.io/jspegele" target="_blank" rel="noreferrer">
-              <FaCodepen size="1.8rem" />
-              CodePen
-            </a> */}
           </div>
         )}
         <div className={footerStyles.logo}>

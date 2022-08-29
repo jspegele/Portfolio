@@ -19,7 +19,7 @@ const Header = ({ type }) => {
             <img src={imgLogo} alt="" /><span>Justin Spegele</span>
           </Link>
           <nav className={headerStyles.nav}>
-            {type === 'full' ? (
+            {type === 'full' && (
               <>
                 <Link
                   to="#services"
@@ -50,7 +50,8 @@ const Header = ({ type }) => {
                   Contact
                 </Link>
               </>
-            ) : type === 'subpage' && (
+            )}
+            {type === 'subpage' && (
               
               <Link
                 to="#contact"
@@ -59,6 +60,16 @@ const Header = ({ type }) => {
               >
                 Contact Us Today <RiMailSendFill className={headerStyles.icon} />
               </Link>
+            )}
+            {type === 'portfolio' && (
+              
+              <a
+                href="mailto:justin@justinspegele.com?subject=Hello Justin"
+                className={`${buttonStyles.button} ${headerStyles.navItem}`}
+                activeClassName={headerStyles.activeNavItem}
+              >
+                Contact Me <RiMailSendFill className={headerStyles.icon} size="2rem" />
+              </a>
             )}
           </nav>
         </header>
