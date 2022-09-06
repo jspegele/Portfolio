@@ -545,7 +545,7 @@ const PortfolioFull = () => {
               <div className={styles.links}>
                 <a
                   className={buttonStyles.buttonTertiary}
-                  href="https://warframe-checklist.herokuapp.com/"
+                  href="https://warframe-checklist.justinspegele.com/"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -553,7 +553,7 @@ const PortfolioFull = () => {
                 </a>
                 <a
                   className={buttonStyles.buttonTertiary}
-                  href="https://github.com/jspegele/warframe-checklist"
+                  href="https://github.com/jspegele/warframe-mastery-checklist"
                   target="_blank"
                   rel="noreferrer"
                 >
