@@ -6,7 +6,7 @@
 .hero {
   align-items: center;
   display: flex;
-  height: 75vh;
+  min-height: 60vh;
   justify-content: center;
 }
 
@@ -77,10 +77,6 @@
     padding: 0;
   }
 
-  .hero {
-    height: 95vh;
-  }
-
   .title {
     font-size: 3.6rem;
   }
@@ -118,7 +114,7 @@
   }
 
   .hero {
-    height: 95vh;
+    min-height: 80vh;
   }
 }
 
