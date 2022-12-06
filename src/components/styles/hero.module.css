@@ -19,7 +19,6 @@
   color: var(--font-light);
   display: flex;
   flex-direction: column;
-  padding-bottom: 20vh;
 }
 
 .hero-footer {
@@ -115,6 +114,10 @@
 
   .hero {
     min-height: 80vh;
+  }
+  
+  .hero-body {
+    padding-bottom: 10vh;
   }
 }
 
