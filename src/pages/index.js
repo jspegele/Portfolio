@@ -4,7 +4,7 @@ import Head from '../components/head'
 import Layout from '../components/layout'
 import Hero from '../components/hero'
 import Services from '../components/services'
-import Projects from '../components/projects'
+import RecentWork from '../components/recent-work'
 import About from '../components/about'
 import Contact from '../components/contact'
 
@@ -14,7 +14,7 @@ const IndexPage = () => {
       <Head />
       <Hero />
       <Services />
-      <Projects />
+      <RecentWork />
       <About />
       <Contact />
     </Layout>
