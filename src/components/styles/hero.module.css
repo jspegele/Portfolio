@@ -6,7 +6,7 @@
 .hero {
   align-items: center;
   display: flex;
-  min-height: 60vh;
+  min-height: 80vh;
   justify-content: center;
 }
 
@@ -110,10 +110,6 @@
 @media (min-width: 1024px) {
   .hero-wrapper {
     background-image: url('../../images/hero-desktop.jpg');
-  }
-
-  .hero {
-    min-height: 80vh;
   }
   
   .hero-body {
