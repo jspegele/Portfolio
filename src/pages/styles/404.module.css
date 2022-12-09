@@ -1,0 +1,12 @@
+.notfound-wrapper { 
+  color: 'white';
+  margin: 15rem auto;
+  max-width: 30rem;
+  text-align: center;
+}
+
+.home-link {
+  color: #688ddf;
+  font-size: 2rem;
+  text-decoration: none;
+}

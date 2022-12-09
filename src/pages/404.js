@@ -5,26 +5,17 @@ import Head from '../components/head'
 import Layout from '../components/layout'
 import Container from '../components/container'
 
+import styles from "./styles/404.module.css"
+
 const NotFound = () => {
   return (
     <Layout>
       <Head title="404" />
       <Container>
-        <div style={{ 
-          color: 'white',
-          marginLeft: 'auto',
-          marginRight: 'auto',
-          marginTop: 15+'rem',
-          maxWidth: 30+'rem',
-          textAlign: 'center'
-        }}>
+        <div className={styles.notfoundWrapper}>
           <h1>Page not found</h1>
           <p style={{ marginTop: 2+'rem' }}>
-            <Link to="/" style={{
-              color: '#688ddf',
-              fontSize: 2+'rem',
-              textDecoration: 'none'
-            }}>Head home</Link>
+            <Link to="/" className={styles.homeLink}>Head home</Link>
             </p>
         </div>
       </Container>
