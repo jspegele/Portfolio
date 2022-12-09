@@ -5,6 +5,10 @@
   text-align: center;
 }
 
+.home-wrapper {
+  margin-top: 2rem;
+}
+
 .home-link {
   color: #688ddf;
   font-size: 2rem;

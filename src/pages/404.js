@@ -14,9 +14,9 @@ const NotFound = () => {
       <Container>
         <div className={styles.notfoundWrapper}>
           <h1>Page not found</h1>
-          <p style={{ marginTop: 2+'rem' }}>
+          <p className={styles.homeWrapper}>
             <Link to="/" className={styles.homeLink}>Head home</Link>
-            </p>
+          </p>
         </div>
       </Container>
     </Layout>
