@@ -22,7 +22,7 @@
     "gatsby-remark-images": "^3.3.29",
     "gatsby-remark-relative-images": "^2.0.2",
     "gatsby-source-filesystem": "^2.3.29",
-    "gatsby-transformer-remark": "^2.8.34",
+    "gatsby-transformer-remark": "^5.25.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-helmet": "^6.1.0",
