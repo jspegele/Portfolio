@@ -25,20 +25,25 @@ const Services = () => {
             <div className={styles.description}>
               <h3>New Website Development</h3>
               <p>
-                I offer full web devleopment services. We'll work together to
-                build a site within your budget that will help you achieve your
-                business goals with a beautiful interface and exceptional user
-                experince.
+                I offer full web devleopment services designed to help
+                businesses of all sizes and industries succeed in the digital
+                world. I can help you create a beautiful, responsive, and
+                user-friendly website that meets your business needs.
               </p>
               <p>
-                My site are fully responsive, mobile friendly, optimized for
-                search engines, and built with modern concepts and technologies
-                to be fast, flexible and secure.
+                I use the latest concepts and technologies to ensure that your
+                website is fast, secure, fully responsive, mobile friendly, and
+                optimized for search engines.
               </p>
               <p>
                 Already have a design and just need the development completed? I
                 can build it for you and launch it on your desired hosting
                 platform.
+              </p>
+              <p>
+                If you are looking for a reliable and experienced web developer
+                to help you create a stunning website, contact me today to learn
+                more about how I can help your business succeed online.
               </p>
               <div className={styles.tags}>
                 <span className={styles.icon}>
