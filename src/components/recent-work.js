@@ -1,7 +1,4 @@
-import React, { useContext, useRef, useState } from "react"
-
-import useOnScreen from "../hooks/use-on-screen"
-import { NavContext } from "../contexts/NavContext"
+import React, { useState } from "react"
 
 import Container from "./container"
 import ProjectModal from "./project-modal"
@@ -40,7 +37,6 @@ import chenelScreen5 from "../images/chenel-capital-screen5.jpg"
 import styles from "./styles/recent-work.module.css"
 
 const RecentWork = () => {
-  const { setActiveNavItem, selectActiveNavItem } = useContext(NavContext)
   const [modal1Open, setModal1Open] = useState(false)
   const [modal2Open, setModal2Open] = useState(false)
   const [modal3Open, setModal3Open] = useState(false)
@@ -48,19 +44,8 @@ const RecentWork = () => {
   const [modal5Open, setModal5Open] = useState(false)
   const [modal6Open, setModal6Open] = useState(false)
 
-  const ref = useRef()
-  const isVisible = useOnScreen(ref)
-
-  const handleActiveNavItem = () => {
-    const activeNavItem = selectActiveNavItem()
-    if (isVisible && activeNavItem !== "work") setActiveNavItem("work")
-    if (!isVisible && activeNavItem === "work") setActiveNavItem(null)
-  }
-
-  handleActiveNavItem()
-
   return (
-    <div id="work" className={styles.worksWrapper} ref={ref}>
+    <div id="work" className={styles.worksWrapper}>
       <Container>
         <div className={styles.header}>
           <h2>Recent Work</h2>
